@@ -1,0 +1,15 @@
+%header.navbar-wrapper
+  .container
+    .navbar
+      .navbar-inner
+        %button.btn.btn-navbar{:type => 'button', :'data-toggle' => 'collapse', :'data-target' => '.nav-collapse'}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to "<strong>We</strong>Collaborate".html_safe, root_path, :class => "brand"
+        .nav-collapse.collapse
+          %ul.nav
+            = active_link_to 'Home', root_path, :wrap_tag => :li
+            = active_link_to 'About', about_path, :wrap_tag => :li
+            = active_link_to 'Contact', contact_path, :wrap_tag => :li
+            = active_link_to 'Timeline', timeline_path, :wrap_tag => :li

@@ -1,0 +1,18 @@
+.divider
+.content
+  .container
+    .maincontainer.borders
+      .topcontainer
+      .timelinecontainer
+        .timeline
+        #timelineblock
+          - @timeline_events.reverse.each do |timeline_event|
+            .block
+              %span#edge
+              - unless timeline_event[:header].blank?
+                %strong= timeline_event[:header] 
+              .pull-right.date #{time_ago_in_words(timeline_event[:date])} ago
+              %p
+                = timeline_event[:content].html_safe
+      
+      
