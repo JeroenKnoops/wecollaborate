@@ -7,12 +7,12 @@
         .timeline
         #timelineblock
           - @timeline_events.reverse.each do |timeline_event|
-            .block
+            .block.timeline_entry
               %span#edge
-              - unless timeline_event[:header].blank?
-                %strong= timeline_event[:header] 
-              .pull-right.date #{time_ago_in_words(timeline_event[:date])} ago
+              - unless timeline_event[:title].blank?
+                %strong= timeline_event[:title] 
+              .pull-right.date #{time_ago_in_words(timeline_event[:timestamp])} ago
               %p
-                = timeline_event[:content].html_safe
+                = timeline_event[:description].html_safe
       
       
