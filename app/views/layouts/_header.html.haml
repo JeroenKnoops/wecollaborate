@@ -13,3 +13,12 @@
             = active_link_to 'About', about_path, :wrap_tag => :li
             = active_link_to 'Contact', contact_path, :wrap_tag => :li
             = active_link_to 'Timeline', timeline_path, :wrap_tag => :li
+            
+          .pull-right{:style => "padding: 15px 20px;"}
+            - if user_signed_in?
+              Welcome #{current_user.email}.
+              = link_to "Sign out", destroy_user_session_path, :method => :delete, :style => "display: inline" 
+            - else 
+              = link_to "Sign up", new_user_registration_path, :style => "display: inline"
+              or 
+              = link_to "sign in", new_user_session_path , :style => "display: inline"

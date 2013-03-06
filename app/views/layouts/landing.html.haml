@@ -8,12 +8,8 @@
   %body
     = render 'layouts/header'
     
-    .divider
-    .content.container
-      = render 'layouts/alerts'
-      = yield
+    = yield
     .container      
       = render 'layouts/footer'
       = debug(params) if Rails.env.development? 
       
-

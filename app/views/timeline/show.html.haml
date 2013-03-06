@@ -1,18 +1,15 @@
-.divider
-.content
-  .container
-    .maincontainer.borders
-      .topcontainer
-      .timelinecontainer
-        .timeline
-        #timelineblock
-          - @timeline_events.reverse.each do |timeline_event|
-            .block.timeline_entry
-              %span#edge
-              - unless timeline_event[:title].blank?
-                %strong= timeline_event[:title] 
-              .pull-right.date #{time_ago_in_words(timeline_event[:timestamp])} ago
-              %p
-                = timeline_event[:description].html_safe
+.maincontainer.borders
+  .topcontainer
+  .timelinecontainer
+    .timeline
+    #timelineblock
+      - @timeline_events.reverse.each do |timeline_event|
+        .block.timeline_entry
+          %span#edge
+          - unless timeline_event[:title].blank?
+            %strong= timeline_event[:title] 
+          .pull-right.date #{time_ago_in_words(timeline_event[:timestamp])} ago
+          %p
+            = timeline_event[:description].html_safe
       
       

@@ -5,6 +5,7 @@ gem 'bootstrap-sass', '2.1'
 gem 'active_link_to'
 gem 'haml-rails', '>= 0.3.4'
 
+gem 'devise'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

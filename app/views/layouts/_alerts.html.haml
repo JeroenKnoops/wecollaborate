@@ -1,0 +1,9 @@
+.container
+  - if notice
+    .alert
+      %button{:type => "button", :class => "close", :'data-dismiss' => "alert"} &times;
+      = notice
+  - if alert
+    .alert.alert-success
+      %button{:type => "button", :class => "close", :'data-dismiss' => "alert"} &times;
+      = notice
