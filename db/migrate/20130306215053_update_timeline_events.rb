@@ -1,5 +1,7 @@
-class AddTimelineEntries < ActiveRecord::Migration
+class UpdateTimelineEvents < ActiveRecord::Migration
   def up
+    Timeline.delete_all
+    
     @timeline_events = []
     @timeline_events << {title: "First drafts for website", 
                          description: "", 
@@ -17,11 +19,10 @@ class AddTimelineEntries < ActiveRecord::Migration
                          description: "start first project about windmills.<br>TEST project.", 
                          timestamp: Date.new(2013,02,27)
                         }
-    ###################
-    # Ignore this migration... model has been changed.
-    # @timeline_events.each do |te|
-    #   Timeline.create te
-    # end                      
+    @timeline_events.each do |te|
+      Timeline.create te
+    end                      
+    
   end
 
   def down

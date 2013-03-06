@@ -1,3 +1,9 @@
+/* mixins, variable, etc. */
+
+$grayMediumLight: #eaeaea;
+$weCollabrateBlue: #73E8FF;
+$weCollabrateBlack: #0D0D0D;
+
 /***** MAIN CONTAINER *****/
 
 .maincontainer {
@@ -57,9 +63,22 @@
 	-webkit-border-radius:3px; 
 }
 
+.global {
+	border: 1px solid $weCollabrateBlue;
+}
+
 .block:hover {
 	border: 1px solid #9fafd0;
+  .global {
+  	border: 1px solid $weCollabrateBlue;
+  	-moz-border-radius:3px; 
+  	border-radius:3px; 
+  	-webkit-border-radius:3px; 
+  }
 }
+
+
+
 /***** END TIMELINE CONTAINER *****/
 
 

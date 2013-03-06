@@ -135,6 +135,11 @@ GEM
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
+    public_activity (1.0.3)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      i18n (>= 0.5.0)
+      railties (~> 3.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -232,6 +237,7 @@ DEPENDENCIES
   jquery-rails (= 2.0.2)
   launchy
   pg (= 0.12.2)
+  public_activity
   rails (= 3.2.12)
   rb-fsevent (= 0.9.1)
   rspec-rails

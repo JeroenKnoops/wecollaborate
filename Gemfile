@@ -6,6 +6,8 @@ gem 'active_link_to'
 gem 'haml-rails', '>= 0.3.4'
 
 gem 'devise'
+gem 'public_activity'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

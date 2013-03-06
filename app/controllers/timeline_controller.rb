@@ -20,6 +20,6 @@ class TimelineController < ApplicationController
     #                      picture: nil, date: Date.new(2013,02,27)
     #                     }
     @timeline_events = Timeline.all 
-                  
+    @activities = Timeline.activities              
   end
 end
