@@ -1,5 +1,9 @@
 Wecollaborate::Application.routes.draw do
 
+  
+  resources :friendships
+
+
   devise_for :users
 
   root to: 'static_pages#home'
@@ -9,6 +13,8 @@ Wecollaborate::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
 
   match 'timeline', to: 'timeline#show'
+
+  match '/people',  to: 'people#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

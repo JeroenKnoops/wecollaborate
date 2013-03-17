@@ -1,0 +1,16 @@
+%h1 Users
+
+%table.table.table-striped
+  - @users.each do |u|
+    %tr
+      %td=  u.email
+      %td
+        - if current_user   
+          - if current_user.friends.include? u 
+            Friend
+          - else
+            = link_to "Add friend", friendships_path(:friend_id => u), :method => :post
+          
+          
+      
+  

@@ -8,6 +8,11 @@ gem 'haml-rails', '>= 0.3.4'
 gem 'devise'
 gem 'public_activity'
 
+# gem "cancan", ">= 1.6.8"
+# gem "rolify", ">= 3.2.0"
+gem "simple_form", ">= 2.0.4"
+# gem "figaro", ">= 0.5.3"
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -16,6 +21,9 @@ group :development do
   gem 'guard-rspec', '1.2.1'
   gem "html2haml"
   gem "erb2haml"
+  gem "quiet_assets", ">= 1.0.1"
+  gem "better_errors", ">= 0.6.0"
+  gem "binding_of_caller"
 end
 
 
@@ -48,3 +56,4 @@ end
 group :production do
   gem 'pg', '0.12.2'
 end
+
