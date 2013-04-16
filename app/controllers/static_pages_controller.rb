@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-    render layout: 'landing'
   end
 
   def help
@@ -10,6 +9,12 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+  end
+  
+  def about_creative_commons_policy
+  end
+
+  def terms_and_conditions
   end
 
 end

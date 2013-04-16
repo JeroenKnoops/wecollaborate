@@ -8,9 +8,13 @@ Wecollaborate::Application.routes.draw do
 
   root to: 'static_pages#home'
 
+  match '/about-creative-commons-policy' => 'static_pages#about_creative_commons_policy', as: 'about_cpp'
+  match '/terms-and-conditions' => 'static_pages#terms_and_conditions', as: 'terms'
+  
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
+
 
   match 'timeline', to: 'timeline#show'
 

@@ -14,9 +14,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'betonef_lightregular';
     src: url('/assets/betonef_light-webfont.eot');
@@ -27,4 +24,20 @@
     font-weight: normal;
     font-style: normal;
 
+}
+
+@font-face { 
+  font-family: AkkoRounded; src: url('AkkoRoundedW01-Black.otf'); 
+} 
+
+@font-face { 
+  font-family: AkkoRounded; 
+  font-weight: bold; 
+  src: url('AkkoRoundedW01-Medium.otf'); 
+}
+
+@font-face { 
+  font-family: AkkoRounded; 
+  font-weight: light; 
+  src: url('AkkoRoundedW01-Light.otf'); 
 }
