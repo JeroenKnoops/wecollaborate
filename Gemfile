@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.1'
 gem 'active_link_to'
 gem 'haml-rails', '>= 0.3.4'

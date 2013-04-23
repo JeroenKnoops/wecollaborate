@@ -27,7 +27,9 @@ doc/
 capybara-*.html
 .rspec
 /.bundle
+/bin
 /vendor/bundle
+/vendor/gems
 /log/*
 /tmp/*
 /db/*.sqlite3
