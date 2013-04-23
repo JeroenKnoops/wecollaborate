@@ -34,4 +34,7 @@ Wecollaborate::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  
+  ENV['SECRET_TOKEN'] = 'fb2b99fec89434b20a239932f2510b89cc32bad2753676b0eedb30975d22292b504a6fed4b96d421809468e984c8816535ddb9a2e74b7023a22a6ab5c7239f16'
+  
 end
