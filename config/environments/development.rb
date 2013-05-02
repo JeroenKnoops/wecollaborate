@@ -39,4 +39,11 @@ Wecollaborate::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   
   ENV['SECRET_TOKEN']= '74217d8bc9059e0a9b47c447a71cab6982d6fc9928a9a832ab6ea782343cb3a54f73c18d3a6ab3d5de4ea910d17930b41b42e311c3ae52c006298bb48cd7600b'
+  
+  ENV['TWITTER_CONSUMER_KEY'] = 'jkCq9QCKxDVKZEwWTgF7JA'
+  ENV['TWITTER_CONSUMER_SECRET'] = 'sWzXZjDo7BNnqwQPhhcwfufBa4Ck9gOvieA2lipT8'
+  
+  ENV["FACEBOOK_APP_ID"] = '21031244697'
+  ENV['FACEBOOK_APP_SECRET'] = 'fbfa11f797a87755e1ed420971988cca'
+  
 end

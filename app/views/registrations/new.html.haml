@@ -7,8 +7,11 @@
     = devise_error_messages!
 
     = f.input :email, :required => true, :autofocus => true
-    = f.input :password, :required => true
-    = f.input :password_confirmation, :required => true
+
+    - if @user.password_required? 
+      = f.input :password, :required => true 
+      = f.input :password_confirmation, :required => true
+      
     = f.button :submit, 'Sign up', :class => 'btn-primary'
 
   = render "devise/shared/links"

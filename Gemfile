@@ -8,6 +8,12 @@ gem 'haml-rails', '>= 0.3.4'
 gem 'devise'
 gem 'public_activity'
 
+# http://www.orhancanceylan.com/rails-twitter-and-facebook-authentications-with-omniauth-and-devise/
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'twitter'
+gem 'fb_graph'
+
 # Gem for adding share buttons to pages.
 gem 'shareable'
 
@@ -15,6 +21,8 @@ gem 'shareable'
 # gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.0.4"
 # gem "figaro", ">= 0.5.3"
+
+gem 'nifty-generators'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -48,6 +56,7 @@ group :test do
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
   gem 'launchy'
+  gem "mocha"
 end
 
 group :development, :test do
@@ -60,3 +69,5 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
+
+gem "mocha", :group => :test
