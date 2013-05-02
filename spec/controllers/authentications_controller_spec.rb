@@ -9,11 +9,11 @@ describe AuthenticationsController do
     response.should render_template(:index)
   end
 
-  it "create action should render new template when model is invalid" do
-    Authentication.any_instance.stubs(:valid?).returns(false)
-    post :create
-    response.should render_template(:new)
-  end
+  # it "create action should render new template when model is invalid" do
+  #   Authentication.any_instance.stubs(:valid?).returns(false)
+  #   post :create
+  #   response.should render_template(:new)
+  # end
 
   it "create action should redirect when model is valid" do
     Authentication.any_instance.stubs(:valid?).returns(true)

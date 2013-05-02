@@ -15,15 +15,13 @@
             = active_link_to 'Timeline', timeline_path, :wrap_tag => :li
             
           .pull-right{:style => "padding: 15px 20px;"}
-            - if user_signed_in?
-              Welcome 
-              = link_to current_user.email, edit_user_registration_path
+            - if user_signed_in? 
+              = link_to 'Profile', edit_user_registration_path
+              |
               = link_to 'Authentications', authentications_path
+              |
               = link_to "Sign out", destroy_user_session_path, :method => :delete, :style => "display: inline" 
             - else 
               = link_to "Sign up", new_user_registration_path, :style => "display: inline"
               = link_to "Sign in", new_user_session_path , :style => "display: inline"
-              %ul
-                %li= link_to "Twitter", user_omniauth_authorize_path(:twitter) 
-                %li= link_to "Facebook", user_omniauth_authorize_path(:facebook) 
               
