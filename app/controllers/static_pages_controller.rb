@@ -17,4 +17,7 @@ class StaticPagesController < ApplicationController
   def terms_and_conditions
   end
 
+  def beta
+  end
+  
 end

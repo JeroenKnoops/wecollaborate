@@ -8,7 +8,7 @@ Wecollaborate::Application.routes.draw do
 
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "authentications#create", registrations: "registrations"}
 
-  root to: 'static_pages#home'
+  root to: 'static_pages#beta'
 
   match '/about-creative-commons-policy' => 'static_pages#about_creative_commons_policy', as: 'about_cpp'
   match '/terms-and-conditions' => 'static_pages#terms_and_conditions', as: 'terms'
@@ -17,7 +17,9 @@ Wecollaborate::Application.routes.draw do
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
 
-
+  match '/beta',    to: 'static_pages#beta'
+  match '/home',    to: 'static_pages#home'
+  
   match 'timeline', to: 'timeline#show'
 
   match '/people',  to: 'people#index'

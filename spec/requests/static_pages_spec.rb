@@ -5,7 +5,7 @@ describe "Static pages" do
   subject { page }
   
   describe "Home page" do
-    before { visit root_path }
+    before { visit home_path }
   
     it { should have_selector('h2', text: 'This is WeCollaborate') }
     it { should have_selector('title', text: full_title('')) }
@@ -31,6 +31,19 @@ describe "Static pages" do
     
     it { should have_selector('h1', text: 'Contact') }
     it { should have_selector('title', text: full_title('Contact')) }
+  end
+
+  describe "Beta page" do
+    before { visit beta_path }
+    
+    it { should have_selector('div', text: 'BETA') }
+  end
+  
+  describe "root page" do
+    before { visit root_path }
+
+    it { should have_selector('div', text: 'BETA') }
+  
   end
   
 end

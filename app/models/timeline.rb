@@ -9,8 +9,11 @@ class Timeline < ActiveRecord::Base
     self.create_activity(:created_timeline)
   end
   
-  def self.activities
-    PublicActivity::Activity.order("created_at desc") #.where(owner_id: current_user.friend_ids, owner_type: "User")
-    
+  def self.activities(user)
+    if user
+      PublicActivity::Activity.order("created_at desc").where(owner_id: user.friend_ids + [user.id], owner_type: "User")
+    else
+      PublicActivity::Activity.order("created_at desc")
+    end    
   end
 end

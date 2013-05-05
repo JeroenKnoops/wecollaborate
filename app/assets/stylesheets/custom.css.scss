@@ -119,7 +119,7 @@ textarea {
 
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
-  padding: 15px 20px;
+  padding: 21px 25px;
 }
 
 /* Offset the responsive button for proper vertical alignment */
@@ -293,3 +293,45 @@ nav.share iframe {max-height:20px; border:0; margin-top:0; padding-top:0;} /* if
 .fb-like{display:inline-block}
 * html .fb-like{display:inline}/* ie6 inline block fix*/
 *+html .fb-like{display:inline}/* ie7 inline block fix*/
+
+#beta-facebook-button {
+  margin: 10px 0px;
+}
+
+#facebook-login-btb {
+    font-size: 14px;
+}
+
+#facebook-login-btb span{
+	font-weight:bold;
+}
+
+#facebook-login-btb a {
+	text-shadow:0 0 2px rgba(0,0,0,0.3);
+  background: linear-gradient(to top,  rgba(131,155,195,1) 0% , rgba(87,111,163,1) 100%);
+//  background: linear-gradient(to top,  #f9f9f9 0%,#f2f6f7 10%,#f2f6f7 90%,#f9f9f9 100%); /* W3C */
+  border: 1px solid #566383;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 1px 0 #CADBFE inset, 0 3px 0 0 #2D447F, 0 4px 2px #999999;
+  color: #FFFFFF;
+  display: inline-block;
+  line-height: 30px;
+	height:30px;
+  padding: 0 10px;
+  position: relative;
+  text-decoration: none;
+  top: -1px;
+  transition-property:top, box-shadow;   
+  transition-duration: 0.1s, 0.1s;   
+  transition-timing-function: linear, linear; 
+}
+
+#facebook-login-btb a:hover {
+	background-image: linear-gradient(to top, rgba(139,161,199,1) 0% , rgba(96,119,170,1) 100%);
+}
+
+#facebook-login-btb a:active
+{
+box-shadow: 0 1px 0 #cadbfe inset, 0 1px 0 0 #2d447f, 0 2px 2px #999999;
+top:2px;
+}
