@@ -1,0 +1,8 @@
+body {
+  background: url(gplaypattern.png) no-repeat top left;
+  background-image: -webkit-image-set(
+    url(gplaypattern.png) 1x, 
+    url(gplaypattern_@2x.png) 2x
+  );
+
+}

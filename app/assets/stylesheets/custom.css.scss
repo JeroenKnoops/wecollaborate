@@ -3,10 +3,34 @@
 /* mixins, variable, etc. */
 
 $grayMediumLight: #eaeaea;
-$weCollabrateBlue: #1488bf;
+//$weCollabrateBlue: #1488bf;
+$weCollabrateBlue: #60c0e5;
 $weCollabrateBlack: #0D0D0D;
+$weCollabrateOrange: #de602e;
 
 $weCollaborateBackgroundFooter: #f2f6f7;
+
+@mixin alpha60 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+@mixin alpha75 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(255, 255, 255);
+	/* RGBa with 0.75 opacity */
+	background: rgba(255, 255, 255, 0.75);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ab000000, endColorstr=#ab000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ab000000, endColorstr=#ab000000)";
+}
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -54,7 +78,10 @@ html {
 body {
   color: #5a5a5a;
   letter-spacing: 0.1em;
-  background: #f9f9f9;
+  // background: #f9f9f9;
+  background: url(gplaypattern.png) repeat top left;
+  background-image: -webkit-image-set( url(gplaypattern.png) 1x, url(gplaypattern_2X.png) 2x );
+  
 }
 
 section {
@@ -73,7 +100,7 @@ textarea {
 }
 
 .content {
-  padding-top: 100px;
+  padding-top: 30px;
 	min-height: 600px;
   
 }
@@ -81,50 +108,30 @@ textarea {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  margin-top: 20px;
-  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-}
-.navbar-wrapper .navbar {
-
-}
-
-/* Remove border and change up box shadow for more contrast */
-.navbar .navbar-inner {
-  border: 0;
-  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-     -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-          box-shadow: 0 2px 10px rgba(0,0,0,.25);
-}
-
-/* Downsize the brand/project name a bit */
-.navbar .brand {
-  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-  font-size: 20px;
-  font-weight: bold;
-//  font-family: 'betonef_lightregular';
-  font-family: 'betonef_extraboldregular';
-  color: $weCollabrateBlue;
-  strong { 
-    color: $weCollabrateBlack;
+.navigation-bar {
+  background: #ffffff;
+  padding-top: 5px;
+  .brand {
+    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+    font-size: 20px;
+    font-weight: bold;
+  //  font-family: 'betonef_lightregular';
     font-family: 'betonef_extraboldregular';
+    color: $weCollabrateBlue;
+    strong { 
+      color: $weCollabrateBlack;
+      font-family: 'betonef_extraboldregular';
+    }
   }
-}
-
-/* Navbar links: increase padding for taller navbar */
-.navbar .nav > li > a {
-  padding: 21px 25px;
-}
-
-/* Offset the responsive button for proper vertical alignment */
-.navbar .btn-navbar {
-  margin-top: 10px;
+  
+  ul li {
+    display: inline;
+    a {
+      color: $weCollabrateBlack;
+      font-size: 1.5em;
+      font-family: 'AkkoRounded';
+    }
+  }
 }
 
 /* typegraphy */
@@ -334,4 +341,120 @@ nav.share iframe {max-height:20px; border:0; margin-top:0; padding-top:0;} /* if
 {
 box-shadow: 0 1px 0 #cadbfe inset, 0 1px 0 0 #2d447f, 0 2px 2px #999999;
 top:2px;
+}
+
+/* Main screen */
+.box {
+  background: white;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 15px;
+  @include alpha75;
+}
+
+.blue-box {
+  background: $weCollabrateBlue;
+  color: white;
+  padding: 15px;
+  font-size: 60px;
+  line-height: 60px;
+  font-family: 'AkkoRounded';
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.orange-box {
+  background: $weCollabrateOrange;
+  color: white;
+  padding: 15px;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: 'AkkoRounded';
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.update-box {
+  .title {
+    font-size: 22px;
+    line-height: 1.1em;
+    font-family: 'AkkoRounded';
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.quote {
+  color: $weCollabrateBlack;
+  font-size: 30px;
+  line-height: 1.1em;
+  font-family: 'AkkoRounded';
+  font-weight: bold;
+  font-style: italic;
+}
+
+.link {
+  font-family: 'AkkoRounded';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 5px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.horizontal-info {
+  .tag {
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+  
+  .title {
+    color: $weCollabrateBlack;
+    font-size: 30px;
+    line-height: 1.1em;
+    font-family: 'AkkoRounded';
+    font-weight: bold;
+  }
+  
+  .author {
+    font-family: 'AkkoRounded';
+    font-size: 12px;
+  }
+}
+
+.banner {
+  padding: 40px;
+  .title {
+    color: $weCollabrateBlack;
+    font-size: 50px;
+    line-height: 1.1em;
+    font-family: 'AkkoRounded';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.vertical-info {
+  .title {
+    color: $weCollabrateBlack;
+    font-size: 30px;
+    line-height: 1.1em;
+    font-family: 'AkkoRounded';
+    font-weight: bold;
+  }
+  .sub-title {
+    color: $weCollabrateBlack;
+    font-size: 20px;
+    line-height: 1.1em;
+    font-family: 'AkkoRounded';
+    font-weight: bold;
+  }
+  .link {
+    font-size: 0.8em;
+  }
 }
