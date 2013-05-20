@@ -32,6 +32,17 @@ $weCollaborateBackgroundFooter: #f2f6f7;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ab000000, endColorstr=#ab000000)";
 }
 
+@mixin alpha85 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(255, 255, 255);
+	/* RGBa with 0.75 opacity */
+	background: rgba(255, 255, 255, 0.85);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e3000000, endColorstr=#e3000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e3000000, endColorstr=#e3000000)";
+}
+
 @mixin box_sizing {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -79,8 +90,8 @@ body {
   color: #5a5a5a;
   letter-spacing: 0.1em;
   // background: #f9f9f9;
-  background: url(gplaypattern.png) repeat top left;
-  background-image: -webkit-image-set( url(gplaypattern.png) 1x, url(gplaypattern_2X.png) 2x );
+  background: url(grid-09.png) repeat top left;
+//  background-image: -webkit-image-set( url(gplaypattern.png) 1x, url(gplaypattern_2X.png) 2x );
   
 }
 
@@ -349,7 +360,7 @@ top:2px;
   padding: 10px;
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 15px;
-  @include alpha75;
+  @include alpha85;
 }
 
 .blue-box {
