@@ -8,9 +8,8 @@
           = # link_to 'Authentications', authentications_path
           = link_to "Sign out", destroy_user_session_path, :method => :delete, :style => "display: inline" 
         - else 
-          = link_to "login with <span>facebook</span>".html_safe, user_omniauth_authorize_path('facebook') 
-                  
-          = # link_to "Sign up", new_user_registration_path, :style => "display: inline"
+          = #link_to "login with <span>facebook</span>".html_safe, user_omniauth_authorize_path('facebook') 
+          = link_to "Sign in / Sign up", new_user_registration_path, :style => "display: inline"
           = # link_to "Sign in", new_user_session_path , :style => "display: inline"
         
     .row-fluid{:style => "padding-top: 10px"}

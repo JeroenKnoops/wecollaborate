@@ -1,18 +1,37 @@
-%h2 Sign up
 
-.span2 &nbsp;
-.login_box.span6
-  = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
+.row-fluid
+  .box.span4
+    %h2 Log in
+    %p Please log in to continue.
+    = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
+      = f.input :email, :autofocus => true, placeholder: 'Email', :label => false
+      - if devise_mapping.recoverable? && controller_name != 'passwords'
+        %div{:style=>"float: right; font-size: 10px"}= link_to "I forgot my password", new_password_path(resource_name)
+      = f.input :password, placeholder: 'Password', :label => false
+      = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
+      = f.button :submit, "Log me in!", :class => 'btn-primary'
   
-    = devise_error_messages!
+  
+  .box.span4
+    %h2 Join WeCollaborate
+    %p A WeCollaborate account is required to participate on this platform.
+    = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
+    
+      / = devise_error_messages!
+  
+      = f.input :email, :required => true, :autofocus => true, placeholder: 'Email', :label => false
 
-    = f.input :email, :required => true, :autofocus => true
-
-    - if @user.password_required? 
-      = f.input :password, :required => true 
-      = f.input :password_confirmation, :required => true
+      - if @user.password_required? 
+        = f.input :password, :required => true , placeholder: 'Password', :label => false
+        = f.input :password_confirmation, :required => true, placeholder: 'Re-enter password', :label => false
+        
+      = f.button :submit, 'Join!', :class => 'btn-primary'
+  
+  .box.span4
+    %h2 Log in
+    = link_to "login with <span>facebook</span>".html_safe, user_omniauth_authorize_path('facebook') 
       
-    = f.button :submit, 'Sign up', :class => 'btn-primary'
-
-  = render "devise/shared/links"
-.span2 &nbsp;
+  
+.row-fluid
+  .box.span12= render "devise/shared/links"
+  
