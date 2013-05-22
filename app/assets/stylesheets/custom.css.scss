@@ -1,4 +1,6 @@
+$gridColumnWidth: 62px;
 @import "bootstrap";
+@import "bootstrap-responsive";
 
 /* mixins, variable, etc. */
 
@@ -9,6 +11,8 @@ $weCollabrateBlack: #0D0D0D;
 $weCollabrateOrange: #de602e;
 
 $weCollaborateBackgroundFooter: #f2f6f7;
+
+@import "button";
 
 @mixin alpha60 {
 	/* Fallback for web browsers that doesn't support RGBa */
@@ -187,13 +191,12 @@ p {
 /* footer */
 
 footer {
-  width: 960px;
+  width: 100%;
+  background: #ffffff;
   margin-top: 45px;
   padding-top: 5px;
 
   color: $grayLight;
-
-  @include we_box;
 
 
   a {

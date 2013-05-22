@@ -9,7 +9,7 @@
         %div{:style=>"float: right; font-size: 10px"}= link_to "I forgot my password", new_password_path(resource_name)
       = f.input :password, placeholder: 'Password', :label => false
       = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
-      = f.button :submit, "Log me in!", :class => 'btn-primary'
+      = f.button :submit, "Log me in!", :class => 'btn-wecollaborate'
   
   
   .box.span4
@@ -25,11 +25,12 @@
         = f.input :password, :required => true , placeholder: 'Password', :label => false
         = f.input :password_confirmation, :required => true, placeholder: 'Re-enter password', :label => false
         
-      = f.button :submit, 'Join!', :class => 'btn-primary'
+      = f.button :submit, 'Join!', :class => 'btn-wecollaborate'
   
   .box.span4
-    %h2 Log in
-    = link_to "login with <span>facebook</span>".html_safe, user_omniauth_authorize_path('facebook') 
+    %h2 Login with Facebook
+    %p Its fast and easy.
+    = link_to "<button class='btn btn-wecollaborate'>login with facebook</button>".html_safe, user_omniauth_authorize_path('facebook') 
       
   
 .row-fluid

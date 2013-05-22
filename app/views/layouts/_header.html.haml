@@ -15,10 +15,11 @@
     .row-fluid{:style => "padding-top: 10px"}
       .span4= link_to "<strong>We</strong>Collaborate".html_safe, root_path, :class => "brand"
       %ul.span8
-        = active_link_to 'How<br/>We Work'.html_safe, about_path, :wrap_tag => :li, :class => "span3"
-        = active_link_to 'Explore<br/>WeCollaborate'.html_safe, about_path, :wrap_tag => :li, :class => "span3"
-        = active_link_to 'Jam<br/>Sessions'.html_safe, about_path, :wrap_tag => :li, :class => "span3"
-        = active_link_to 'Start a<br/>Project'.html_safe, about_path, :wrap_tag => :li, :class => "span3"
+        = active_link_to 'What is<br/>WeCollaborate'.html_safe, about_path, :wrap_tag => :li, :class => "span3"
+        = active_link_to 'Find<br/>Projects'.html_safe, about_path, :wrap_tag => :li, :class => "span2"
+        = active_link_to 'Our<br/>Community'.html_safe, about_path, :wrap_tag => :li, :class => "span3"
+        = active_link_to 'Jam<br/>Sessions'.html_safe, about_path, :wrap_tag => :li, :class => "span2"
+        = active_link_to 'Start a<br/>Project'.html_safe, about_path, :wrap_tag => :li, :class => "span2"
         / = active_link_to 'Timeline', timeline_path, :wrap_tag => :li
               
                   
