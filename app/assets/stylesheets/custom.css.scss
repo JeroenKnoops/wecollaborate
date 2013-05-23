@@ -19,9 +19,9 @@ $weCollaborateBackgroundFooter: #f2f6f7;
 	/* RGBa with 0.6 opacity */
 	background: rgba(0, 0, 0, 0.6);
 	/* For IE 5.5 - 7*/
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff);
 	/* For IE 8*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff)";
 }
 
 @mixin alpha75 {
@@ -30,9 +30,9 @@ $weCollaborateBackgroundFooter: #f2f6f7;
 	/* RGBa with 0.75 opacity */
 	background: rgba(255, 255, 255, 0.75);
 	/* For IE 5.5 - 7*/
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ab000000, endColorstr=#ab000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccfffff, endColorstr=#ccfffff);
 	/* For IE 8*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ab000000, endColorstr=#ab000000)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff)";
 }
 
 @mixin alpha85 {
@@ -470,4 +470,72 @@ top:2px;
   .link {
     font-size: 0.8em;
   }
+}
+
+.hexagon-red {
+	width: 44px;
+	height: 26px;
+	background: rgba(255, 0, 0, 0.6);
+	position: relative;
+  top: 98px;
+  left: -55px;
+  z-index: -1;
+}
+
+.hexagon-red:before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-bottom: 13px solid rgba(255, 0, 0, 0.6);
+}
+
+.hexagon-red:after {
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-top: 12px solid rgba(255, 0, 0, 0.6);
+}
+
+.hexagon-blue {
+	width: 44px;
+	height: 26px;
+	background: rgba(0, 0, 255, 0.6);
+	position: relative;
+  top: 354px;
+  left: 964px;
+  z-index: -1;
+}
+
+.hexagon-blue:before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-bottom: 13px solid rgba(0, 0, 255, 0.6);
+}
+
+.hexagon-blue:after {
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-top: 12px solid rgba(0, 0, 255, 0.6);
 }
