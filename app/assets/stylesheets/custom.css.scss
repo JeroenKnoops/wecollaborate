@@ -1,6 +1,5 @@
-$gridColumnWidth: 62px;
+$gridColumnWidth: 80px;
 @import "bootstrap";
-@import "bootstrap-responsive";
 
 /* mixins, variable, etc. */
 
@@ -96,7 +95,7 @@ body {
   // background: #f9f9f9;
   background: url(grid-09.png) repeat top left;
   background-image: -webkit-image-set( url(grid-09.png) 1x, url(grid-09_2X.png) 2x );
-  
+  background-position: center;
 }
 
 section {
