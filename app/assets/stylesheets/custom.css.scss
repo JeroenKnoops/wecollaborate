@@ -119,6 +119,7 @@ textarea {
 
 .navigation-bar {
   background: #ffffff;
+  @include alpha85;
   padding-top: 5px;
   .brand {
     padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
@@ -139,6 +140,13 @@ textarea {
       color: $weCollaborateOffBlack;
       font-size: 1.5em;
       font-family: 'AkkoRounded';
+      font-weight: bold;
+      padding: 5px 10px;
+      &:hover {
+        text-decoration:none;
+        background: $weCollaborateBlue;
+        color: white;
+      }
     }
   }
 }
