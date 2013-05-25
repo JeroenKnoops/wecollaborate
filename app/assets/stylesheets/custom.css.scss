@@ -1,16 +1,11 @@
 $gridColumnWidth: 80px;
+@import "variables";
+
 @import "bootstrap";
+@import "fonts";
+@import "ribbon";
 
 /* mixins, variable, etc. */
-
-$grayMediumLight: #eaeaea;
-//$weCollabrateBlue: #1488bf;
-$weCollabrateBlue: #60c0e5;
-$weCollabrateBlack: #0D0D0D;
-$weCollabrateOrange: #de602e;
-
-$weCollaborateBackgroundFooter: #f2f6f7;
-
 @import "button";
 
 @mixin alpha60 {
@@ -53,8 +48,8 @@ $weCollaborateBackgroundFooter: #f2f6f7;
 }
 
 @mixin we_box {
-  border-top: 1px dashed $weCollabrateBlue;
-  border-bottom: 1px dashed $weCollabrateBlue;
+  border-top: 1px dashed $weCollaborateBlue;
+  border-bottom: 1px dashed $weCollaborateBlue;
 
   /* http://www.colorzilla.com/gradient-editor/ */
   
@@ -131,9 +126,9 @@ textarea {
     font-weight: bold;
   //  font-family: 'betonef_lightregular';
     font-family: 'betonef_extraboldregular';
-    color: $weCollabrateBlue;
+    color: $weCollaborateBlue;
     strong { 
-      color: $weCollabrateBlack;
+      color: $weCollaborateOffBlack;
       font-family: 'betonef_extraboldregular';
     }
   }
@@ -141,7 +136,7 @@ textarea {
   ul li {
     display: inline;
     a {
-      color: $weCollabrateBlack;
+      color: $weCollaborateOffBlack;
       font-size: 1.5em;
       font-family: 'AkkoRounded';
     }
@@ -151,7 +146,7 @@ textarea {
 /* typegraphy */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  color: $weCollabrateBlue;
+  color: $weCollaborateBlue;
   font-family: 'AkkoRounded';
   
 }
@@ -173,7 +168,7 @@ h1 {
 h2 {
   font-size: 1.7em;
   font-weight: light;
-  color: $weCollabrateBlack;
+  color: $weCollaborateOffBlack;
 }
 
 h3 {
@@ -285,7 +280,7 @@ input {
 }
 
 .divider {
-  background-color: $weCollabrateBlue;
+  background-color: $weCollaborateBlue;
   height: 5px;
   width: 100%;
   display: block;
@@ -293,7 +288,7 @@ input {
 
 /* login box */
 .login_box  {
-  border: 1px $weCollabrateBlue solid;
+  border: 1px $weCollaborateBlue solid;
   padding: 40px;
 	
   -moz-border-radius:3px; 
@@ -366,7 +361,7 @@ top:2px;
 }
 
 .blue-box {
-  background: $weCollabrateBlue;
+  background: $weCollaborateBlue;
   color: white;
   padding: 15px;
   font-size: 60px;
@@ -378,7 +373,7 @@ top:2px;
 }
 
 .orange-box {
-  background: $weCollabrateOrange;
+  background: $weCollaborateRed;
   color: white;
   padding: 15px;
   font-size: 45px;
@@ -400,7 +395,7 @@ top:2px;
 }
 
 .quote {
-  color: $weCollabrateBlack;
+  color: $weCollaborateOffBlack;
   font-size: 30px;
   line-height: 1.1em;
   font-family: 'AkkoRounded';
@@ -426,7 +421,7 @@ top:2px;
   }
   
   .title {
-    color: $weCollabrateBlack;
+    color: $weCollaborateOffBlack;
     font-size: 30px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';
@@ -442,7 +437,7 @@ top:2px;
 .banner {
   padding: 40px;
   .title {
-    color: $weCollabrateBlack;
+    color: $weCollaborateOffBlack;
     font-size: 50px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';
@@ -454,14 +449,14 @@ top:2px;
 
 .vertical-info {
   .title {
-    color: $weCollabrateBlack;
+    color: $weCollaborateOffBlack;
     font-size: 30px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';
     font-weight: bold;
   }
   .sub-title {
-    color: $weCollabrateBlack;
+    color: $weCollaborateOffBlack;
     font-size: 20px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';

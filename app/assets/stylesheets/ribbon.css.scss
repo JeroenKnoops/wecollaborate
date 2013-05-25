@@ -34,12 +34,12 @@
   left: -5px;
   top: 15px;
   width: 120px;
-  background-color: #BFDC7A;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
-  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
-  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
-  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
-  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-color: $weCollaborateGreen;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($weCollaborateGreen), to(darker($weCollaborateGreen, 20%))); 
+  background-image: -webkit-linear-gradient(top, $weCollaborateGreen, darker($weCollaborateGreen, 20%)); 
+  background-image:    -moz-linear-gradient(top, $weCollaborateGreen, darker($weCollaborateGreen, 20%)); 
+  background-image:     -ms-linear-gradient(top, $weCollaborateGreen, darker($weCollaborateGreen, 20%)); 
+  background-image:      -o-linear-gradient(top, $weCollaborateGreen, darker($weCollaborateGreen, 20%)); 
   color: #6a6340;
   -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
   -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
