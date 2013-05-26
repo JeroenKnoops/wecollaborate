@@ -27,7 +27,7 @@
   .box.horizontal-info
     .row-fluid
       .span8
-        .image= image_tag "dummy/movie.png"
+        .image= image_tag "projects/tingle_small.png"
       .span4
         .tag Technology
         .title Tingle
@@ -40,71 +40,8 @@
   .box.banner
     .title Our community
   .row-fluid
-    .span6
-      .box.vertical-info
-        .image= image_tag "dummy/movie.png"
-        .title Tobias Janssen
-        .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ldsdjkfs dsajfsdlkjf lksdjf sda. Ut enim ad minim veniam, quis nostrud exercitation ul
-        .row-fluid
-          .span6
-            .sub-title Skills
-            %ul
-              %li Woodwork
-              %li Design
-          .span6
-            .sub-title Collaborations
-            %ul
-              %li Drawality
-              %li Creation of a strange...
-        .link= link_to "find out more", about_path
-      .box.vertical-info
-        .image= image_tag "dummy/movie.png"
-        .title Tobias Janssen
-        .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
-        .row-fluid
-          .span6
-            .sub-title Skills
-            %ul
-              %li Woodwork
-              %li Design
-          .span6
-            .sub-title Collaborations
-            %ul
-              %li Drawality
-              %li Creation of a strange...
-        .link= link_to "find out more", about_path
-    .span6
-      .box.vertical-info
-        .image= image_tag "dummy/movie.png"
-        .title Daniel Costa
-        .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        .row-fluid
-          .span6
-            .sub-title Skills
-            %ul
-              %li Ceramic
-              %li Performance
-          .span6
-            .sub-title Collaborations
-            %ul
-              %li Tingle
-              %li Drawality
-        .link= link_to "find out more", about_path
-      .box.vertical-info
-        .image= image_tag "dummy/movie.png"
-        .title Daniel Costa
-        .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
-        .row-fluid
-          .span6
-            .sub-title Skills
-            %ul
-              %li Ceramic
-              %li Performance
-          .span6
-            .sub-title Collaborations
-            %ul
-              %li Tingle
-              %li Drawality
-        .link= link_to "find out more", about_path
+    .span6=render :partial => 'person_box', :locals => {:image_url => "people/tobias.png", :name => "Tobias Janssen", :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ldsdjkfs dsajfsdlkjf lksdjf sda. Ut enim ad minim veniam, quis nostrud exercitation ul", :skills => ["Woodwork", "Design"], :collaborations => ["Drawality", "Creation of a strange.."] } 
+    .span6=render :partial => 'person_box', :locals => {:image_url => "people/conor.png", :name => "Conor Trawinski", :badge => "initiator", :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ldsdjkfs dsajfsdlkjf lksdjf sda. Ut enim ad minim veniam, quis nostrud exercitation ul", :skills => ["Woodwork", "Design"], :collaborations => ["Drawality", "Creation of a strange.."] } 
+
 .hexagon-red
 .hexagon-blue    

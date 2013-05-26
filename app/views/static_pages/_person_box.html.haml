@@ -1,0 +1,19 @@
+.box.vertical-info
+  .image= image_tag image_url
+  .title
+    = name
+    -if defined? badge
+      .badge{:class => "badge-#{badge}"}= badge
+  .description= description
+  .row-fluid
+    .span6
+      .sub-title Skills
+      %ul
+        - skills.each do |skill|
+          %li= skill
+    .span6
+      .sub-title Collaborations
+      %ul
+        - collaborations.each do |collaboration| 
+          %li= collaboration
+  .link= link_to "find out more", about_path

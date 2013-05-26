@@ -3,11 +3,13 @@ $gridColumnWidth: 80px;
 
 @import "bootstrap";
 @import "fonts";
-@import "ribbon";
 
 /* mixins, variable, etc. */
 @import "button";
 @import "mixins";
+
+@import "badge";
+@import "ribbon";
 
 /* universal */
 
