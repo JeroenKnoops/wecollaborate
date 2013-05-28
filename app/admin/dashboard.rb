@@ -6,18 +6,22 @@ ActiveAdmin.register_page "Dashboard" do
 
     columns do
       column do
-        panel "Recent Users" do
+        panel "Recent Projects" do
           ul do
-            User.recent(5).map do |user|
-              li link_to(user.email, admin_user_path(user))
+            Project.recent(5).map do |project|
+              li link_to(project.title, [:admin, project])
             end
           end
         end
       end
 
       column do
-        panel "Info" do
-          para "Welcome to ActiveAdmin."
+        panel "Recent Users" do
+          ul do
+            User.recent(5).map do |user|
+              li link_to(user.email, admin_user_path(user))
+            end
+          end
         end
       end
     end

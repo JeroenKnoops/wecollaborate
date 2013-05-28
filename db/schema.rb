@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130528080907) do
+ActiveRecord::Schema.define(:version => 20130528112809) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -73,9 +73,59 @@ ActiveRecord::Schema.define(:version => 20130528080907) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "categories", :force => true do |t|
+    t.string   "title"
+    t.integer  "sort_order"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "friendships", :force => true do |t|
     t.integer  "user_id"
     t.integer  "friend_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "phases", :force => true do |t|
+    t.string   "title"
+    t.integer  "sort_order"
+    t.string   "color"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "project_categories", :force => true do |t|
+    t.integer  "project_id"
+    t.integer  "category_id"
+    t.integer  "weight"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "project_skills", :force => true do |t|
+    t.integer  "project_id"
+    t.integer  "skill_id"
+    t.integer  "weight"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "projects", :force => true do |t|
+    t.string   "title"
+    t.string   "project_image_url"
+    t.integer  "initiator_id"
+    t.integer  "phase_id"
+    t.string   "phrase"
+    t.string   "project_type"
+    t.text     "details"
+    t.boolean  "status"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "skills", :force => true do |t|
+    t.string   "title"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

@@ -23,6 +23,8 @@ class User < ActiveRecord::Base
   
   scope :recent, lambda {|number| order("created_at desc").limit(number)}
   
+  has_many :projects
+  
   def create_activity_record
     self.create_activity(:created_user, :owner => self)
   end
@@ -45,5 +47,8 @@ class User < ActiveRecord::Base
       super
     end
   end
-  
+
+  def to_s
+    email
+  end
 end

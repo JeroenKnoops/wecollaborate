@@ -9,6 +9,7 @@ gem 'devise'
 gem 'public_activity'
 
 gem 'activeadmin'
+gem 'tinymce-rails'
 
 # http://www.orhancanceylan.com/rails-twitter-and-facebook-authentications-with-omniauth-and-devise/
 gem 'omniauth-twitter'
