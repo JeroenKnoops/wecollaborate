@@ -21,6 +21,7 @@ Wecollaborate::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
 
   match '/home',    to: 'static_pages#home'
+  match '/construction', to: 'static_pages#construction'
   
   match 'timeline', to: 'timeline#show'
 

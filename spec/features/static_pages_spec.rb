@@ -33,5 +33,10 @@ describe "Static pages" do
     it { should have_selector('div', text: 'BETA') }
   
   end
+
+  describe "under construction page" do
+    before { visit construction_path }
+    it { should have_selector('div', text: 'This page is under construction!') }
+  end
   
 end

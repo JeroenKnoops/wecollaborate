@@ -13,6 +13,7 @@ ActiveAdmin.register_page "Dashboard" do
             end
           end
         end
+        strong { link_to "View All Projects", admin_projects_path }
       end
 
       column do
@@ -23,6 +24,7 @@ ActiveAdmin.register_page "Dashboard" do
             end
           end
         end
+        strong { link_to "View All Users", admin_users_path }
       end
     end
 

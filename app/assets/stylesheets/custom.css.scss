@@ -314,6 +314,22 @@ top:2px;
   @include alpha85;
 }
 
+.yellow-box {
+  background: $weCollaborateYellow;
+  color: white;
+  padding: 15px;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: 'AkkoRounded';
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  .sub {
+    font-size: 20px;
+  }
+}
+
 .blue-box {
   background: $weCollaborateBlue;
   color: white;
@@ -336,6 +352,15 @@ top:2px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  display: block;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &:hover {
+    background: $weCollaborateBlue;
+    text-decoration: none;
+  };
 }
 
 .update-box {

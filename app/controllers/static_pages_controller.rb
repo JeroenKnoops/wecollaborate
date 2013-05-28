@@ -20,4 +20,7 @@ class StaticPagesController < ApplicationController
   def beta
   end
   
+  def construction
+  end
+  
 end
