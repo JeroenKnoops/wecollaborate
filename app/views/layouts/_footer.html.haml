@@ -1,28 +1,28 @@
 %footer.footer
   .container
     .row-fluid
-      .span12
-        logo comes here
+      .logo= link_to "", root_path, :style => "height: 100%;width: 100%; display: block;"
+
     .row-fluid
       .span4
         %ul
-          %li= link_to "About Creative Commons Policy",    about_cpp_path
-          %li= link_to "Terms and Conditions",             terms_path
+          %li= link_to "About Creative Commons Policy",    construction_path
+          %li= link_to "Terms and Conditions",             construction_path
       .span4
         %ul
-          %li= link_to "Start a Project"
-          %li= link_to "Explore"
-          %li= link_to "Jam Sessions"
-          %li= link_to "Support"
-          %li= link_to "About",    about_path
+          %li= link_to "Discover Projects", construction_path
+          %li= link_to "Our Community", construction_path
+          %li= link_to "Creative Jams", construction_path
+          %li= link_to "Support", construction_path
+          %li= link_to "Start a Project", construction_path
       .span4
         %ul
           %li
             %h2 Keep in touch
-          %li conor@wecollaborate.com
+          %li wecollaborate.eu@gmail.com
             
-          %li + 31 6 12 34 56 78
           %li
-            %span Twitter-logo
-            %span Facebook-logo
+            .row-fluid{:style => "margin-top: 20px;"}
+              .span4.twitter-logo= link_to "", root_path, :style => "height: 100%;width: 100%; display: block;"
+              .span4.facebook-logo= link_to "", root_path, :style => "height: 100%;width: 100%; display: block;"
     

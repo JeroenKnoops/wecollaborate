@@ -56,19 +56,22 @@ textarea {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+.logo {
+  background: url('/assets/logo_and_buttons/WeCollaborate_Logo_1.png') no-repeat top left;
+  width: 234px;
+  height: 37px;
+  margin-bottom: 20px;
+  float: left;
+  &:hover {
+    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_1.png') no-repeat top left;
+  }
+  
+}
+
 .navigation-bar {
   background: #ffffff;
   @include alpha85;
   padding-top: 5px;
-  .logo {
-    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_1.png') no-repeat top left;
-    width: 234px;
-    height: 37px;
-    &:hover {
-      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_1.png') no-repeat top left;
-    };
-  }
-  
   
   ul li {
     display: inline;
@@ -153,7 +156,22 @@ footer {
   
   h2 {
     text-align: left;
+    color: $weCollaborateRed;
   }
+  
+  .twitter-logo {
+    background: url('/assets/logo_and_buttons/Twitter_1.png') no-repeat top left;
+    width: 41px;
+    height: 33px;
+  }
+
+  .facebook-logo {
+    background: url('/assets/logo_and_buttons/Facebook_1.png') no-repeat top left;
+    width: 41px;
+    height: 33px;
+  }
+
+  
 }
 
 /* sidebar */
@@ -518,3 +536,4 @@ top:2px;
 	border-right: 22px solid transparent;
 	border-top: 12px solid rgba(0, 0, 255, 0.6);
 }
+

@@ -1,6 +1,7 @@
 %header.navigation-bar
   .container
-    .row-fluid
+    .row-fluid{:style => "padding-top: 10px"}
+      .logo= link_to "", root_path, :style => "height: 100%;width: 100%; display: block;"
       .pull-right
         - if user_signed_in? 
           = link_to 'Profile', edit_user_registration_path
@@ -12,8 +13,6 @@
           = link_to "Sign in / Sign up", new_user_registration_path, :style => "display: inline"
           = # link_to "Sign in", new_user_session_path , :style => "display: inline"
         
-    .row-fluid{:style => "padding-top: 10px"}
-      .span4.logo= link_to "", root_path, :style => "height: 100%;width: 100%; display: block;"
     .row-fluid{:style => "padding-top: 10px"}
       %ul.span12
         = active_link_to 'Find Projects'.html_safe, construction_path, :wrap_tag => :li
