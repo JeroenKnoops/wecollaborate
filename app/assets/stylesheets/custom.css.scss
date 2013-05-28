@@ -11,6 +11,8 @@ $gridColumnWidth: 80px;
 @import "badge";
 @import "ribbon";
 
+@import "controller_styles";
+
 /* universal */
 
 html {
@@ -57,15 +59,14 @@ textarea {
 -------------------------------------------------- */
 
 .logo {
-  background: url('/assets/logo_and_buttons/WeCollaborate_Logo_1.png') no-repeat top left;
+  background: url('/assets/logo_and_buttons/WeCollaborate_Logo_3.png') no-repeat top left;
   width: 234px;
   height: 37px;
   margin-bottom: 20px;
   float: left;
   &:hover {
-    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_1.png') no-repeat top left;
+    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_3.png') no-repeat top left;
   }
-  
 }
 
 .navigation-bar {
@@ -83,10 +84,15 @@ textarea {
       padding: 5px 10px;
       &:hover {
         text-decoration:none;
-        background: $weCollaborateBlue;
+        background: $weCollaborateYellow;
         color: white;
       }
     }
+  }
+  
+  .links {
+    float: left;
+    margin-left: 50px;
   }
 }
 
@@ -156,17 +162,17 @@ footer {
   
   h2 {
     text-align: left;
-    color: $weCollaborateRed;
+    color: $weCollaborateYellow;
   }
   
   .twitter-logo {
-    background: url('/assets/logo_and_buttons/Twitter_1.png') no-repeat top left;
+    background: url('/assets/logo_and_buttons/Twitter_3.png') no-repeat top left;
     width: 41px;
     height: 33px;
   }
 
   .facebook-logo {
-    background: url('/assets/logo_and_buttons/Facebook_1.png') no-repeat top left;
+    background: url('/assets/logo_and_buttons/Facebook_3.png') no-repeat top left;
     width: 41px;
     height: 33px;
   }
@@ -260,7 +266,6 @@ input {
 
 /* login box */
 .login_box  {
-  border: 1px $weCollaborateBlue solid;
   padding: 40px;
 	
   -moz-border-radius:3px; 
@@ -537,3 +542,28 @@ top:2px;
 	border-top: 12px solid rgba(0, 0, 255, 0.6);
 }
 
+#project_page {
+  .main {
+    margin-left: 0px;
+    margin-right: 21px;
+    height: 100%;
+    display: inline;
+  }
+  
+  .side-bar {
+    height: 100%;
+    display: block;
+
+    .skills-container {
+      position: relative;
+      bottom: 0;
+    }
+  }
+  
+  .title {
+    font-family: 'AkkoRounded';
+    font-weight: bold;
+    font-size: 2.0em;
+    line-height: 2.0em;
+  }
+}

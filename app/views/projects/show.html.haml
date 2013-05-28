@@ -1,0 +1,53 @@
+#project_page
+  .row-fluid
+    .span4
+      .box
+        .title= @project.title
+        .initiated
+          initiated by
+          %strong= @project.initiator.email
+  .row-fluid
+    .main
+      .box
+        .image= image_tag @project.project_image_url
+    .side-bar
+      .box
+        .categories
+          .title= @project.categories.map(&:title).join("/")
+          project
+      .box
+        .reward
+          .title Enjoyment
+          as reward
+      .box
+        .phase{:class => "phase-#{@project.phase.color}"}
+          .title= @project.phase.title
+          phase
+      .skills-container
+        .box
+          .skills
+            .title Skills needed
+        .box
+          - @project.skills.each do |skill|
+            = skill.title
+            %br
+  .row-fluid
+    .main
+      .box
+        .title
+          "
+          = @project.phrase
+          "
+    .side-bar
+      .box.orange-box
+        Participate
+
+  .row-fluid
+    .main
+      .box
+        .title
+          Project Details
+      .box= @project.details.html_safe    
+            
+.hexagon-red
+.hexagon-blue    

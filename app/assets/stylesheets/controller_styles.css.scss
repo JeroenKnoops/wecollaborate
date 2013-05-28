@@ -1,0 +1,69 @@
+#static_pages_controller {
+  /* Header */
+  .logo {
+    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_3.png') no-repeat top left;
+    &:hover {
+      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_3.png') no-repeat top left;
+    }
+  }
+
+  .navigation-bar {
+    ul li {
+      a {
+        &:hover {
+          background: $weCollaborateYellow;
+        }
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    h2 {
+      color: $weCollaborateYellow;
+    }
+    
+    .twitter-logo {
+      background: url('/assets/logo_and_buttons/Twitter_3.png') no-repeat top left;
+    }
+  
+    .facebook-logo {
+      background: url('/assets/logo_and_buttons/Facebook_3.png') no-repeat top left;
+    }
+  }
+}
+
+#projects_controller {
+  /* Header */
+  .logo {
+    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_2.png') no-repeat top left;
+    &:hover {
+      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_2.png') no-repeat top left;
+    }
+  }
+
+  .navigation-bar {
+    ul li {
+      a {
+        &:hover {
+          background: $weCollaborateRed;
+        }
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    h2 {
+      color: $weCollaborateRed;
+    }
+    
+    .twitter-logo {
+      background: url('/assets/logo_and_buttons/Twitter_2.png') no-repeat top left;
+    }
+  
+    .facebook-logo {
+      background: url('/assets/logo_and_buttons/Facebook_2.png') no-repeat top left;
+    }
+  }
+}

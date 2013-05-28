@@ -15,6 +15,7 @@ class Project < ActiveRecord::Base
   
   scope :recent, lambda {|number| order("created_at desc").limit(number)}
   scope :inactive, where(:status => false)
+  scope :active, where(:status => true)
   
   
 end
