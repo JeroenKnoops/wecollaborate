@@ -18,6 +18,6 @@ class Project < ActiveRecord::Base
   scope :active, where(:status => true)
   
   def self.default
-    where(:title => "Bike Club").first || first
+    where(:title => "Bike Club").first || 1
   end
 end
