@@ -60,17 +60,15 @@ textarea {
   background: #ffffff;
   @include alpha85;
   padding-top: 5px;
-  .brand {
-    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'betonef_extraboldregular';
-    color: $weCollaborateBlue;
-    strong { 
-      color: $weCollaborateOffBlack;
-      font-family: 'betonef_extraboldregular';
-    }
+  .logo {
+    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_1.png') no-repeat top left;
+    width: 234px;
+    height: 37px;
+    &:hover {
+      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_1.png') no-repeat top left;
+    };
   }
+  
   
   ul li {
     display: inline;

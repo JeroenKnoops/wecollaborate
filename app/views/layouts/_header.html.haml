@@ -13,7 +13,7 @@
           = # link_to "Sign in", new_user_session_path , :style => "display: inline"
         
     .row-fluid{:style => "padding-top: 10px"}
-      .span4= link_to "<strong>We</strong>Collaborate".html_safe, root_path, :class => "brand"
+      .span4.logo= link_to "", root_path, :style => "height: 100%;width: 100%; display: block;"
     .row-fluid{:style => "padding-top: 10px"}
       %ul.span12
         = active_link_to 'Find Projects'.html_safe, construction_path, :wrap_tag => :li
