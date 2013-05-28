@@ -17,5 +17,7 @@ class Project < ActiveRecord::Base
   scope :inactive, where(:status => false)
   scope :active, where(:status => true)
   
-  
+  def self.default
+    where(:title => "Bike Club").first || first
+  end
 end
