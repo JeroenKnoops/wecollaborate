@@ -21,6 +21,8 @@ class User < ActiveRecord::Base
 
   after_create :create_activity_record
   
+  scope :recent, lambda {|number| order("created_at desc").limit(number)}
+  
   def create_activity_record
     self.create_activity(:created_user, :owner => self)
   end
