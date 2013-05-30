@@ -28,7 +28,7 @@
         .box.box-bordered
           .skills
             .title Skills needed
-        .box.box-bordered
+        .box.box-bordered{:style => "margin-bottom: 0px"}
           - @project.skills.each do |skill|
             = skill.title
             %br
@@ -52,6 +52,6 @@
             
 :javascript
   $('#project_image').load(function () {
-    $('.side-bar').css('height',$('#project_image').css('height'));
+    $('.project-header-row .side-bar').css('height',$('#project_image').css('height'));
   })
     
