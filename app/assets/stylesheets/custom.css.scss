@@ -335,6 +335,10 @@ top:2px;
   @include alpha85;
 }
 
+.box-bordered {
+  padding: 10px;
+}
+
 .yellow-box {
   background: $weCollaborateYellow;
   color: white;
@@ -588,23 +592,69 @@ top:2px;
     margin-left: 0px;
     margin-right: 21px;
     height: 100%;
-    display: inline;
   }
   
   .side-bar {
     height: 100%;
-    display: block;
+    position: relative;
 
     .skills-container {
-      position: relative;
-      bottom: 0;
+      position: absolute;
+      bottom: 0px;
     }
   }
   
   .title {
     font-family: 'AkkoRounded';
     font-weight: bold;
-    font-size: 2.0em;
-    line-height: 2.0em;
+    font-size: 2.2em;
+    line-height: 1.0em;
+    
+    color: $weCollaborateOffBlack;
   }
+  
+  #title {
+    .title {
+      font-size: 2.5em;
+    }
+  }
+  
+  .box-reward {
+    width: 60%;
+  }
+  
+  .reward {
+    padding: 5px;
+    color: white;
+    .title {
+      color: white;
+      font-size: 1.5em;
+    }
+  }
+  
+  .reward-turquoise {
+    background: $weCollaborateTurquoise;
+  }
+
+  .box-phase {
+    width: 60%;
+  }
+
+  .phase {
+    padding: 5px;
+    color: white;
+    .title {
+      color: white;
+      font-size: 1.5em;
+    }
+  }
+  
+  .phase-turquoise {
+    background: $weCollaborateTurquoise;
+  }
+
+  .phase-red {
+    background: $weCollaborateRed;
+  }
+  
 }
