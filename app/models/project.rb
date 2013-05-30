@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :project_image_url, :details, :initiator_id, :phase_id, :phrase, :title, :project_type, :status, :skill_ids, :category_ids
+  attr_accessible :project_image_url, :project_small_image_url, :details, :initiator_id, :phase_id, :phrase, :title, :project_type, :status, :skill_ids, :category_ids
   
   belongs_to :initiator, :class_name => "User", :foreign_key => "initiator_id"
 

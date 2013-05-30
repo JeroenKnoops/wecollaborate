@@ -1,7 +1,7 @@
 .hexagons
-  - rand(2..7).times do
-    .hexagon-red{:style => "top: #{rand(-200..1200)}px; left: #{rand(-200..1200)}px"}
-  - rand(2..7).times do
-    .hexagon-blue{:style => "top: #{rand(-200..1200)}px; left: #{rand(-200..1200)}px"}
-  - rand(2..7).times do
-    .hexagon-yellow{:style => "top: #{rand(-200..1200)}px; left: #{rand(-200..1200)}px"}
+  - (rand(5) + 2).times do
+    .hexagon-red{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+  - (rand(5) + 2).times do
+    .hexagon-blue{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+  - (rand(5) + 2).times do
+    .hexagon-yellow{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
