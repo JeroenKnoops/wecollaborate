@@ -17,6 +17,14 @@ class Project < ActiveRecord::Base
   scope :inactive, where(:status => false)
   scope :active, where(:status => true)
   
+  validates :project_image_url, :presence => true
+  validates :initiator_id, :presence => true
+  validates :phase_id, :presence => true
+  validates :phrase, :presence => true
+  validates :title, :presence => true
+  validates :project_type, :presence => true
+  validates :status, :presence => true
+  
   def self.default
     where(:title => "Bike Club").first || 1
   end
