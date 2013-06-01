@@ -88,6 +88,14 @@ textarea {
         color: white;
       }
     }
+    .active {
+      background: $weCollaborateYellow;
+      color: white;
+      &:hover {
+        color: $weCollaborateOffBlack;
+      }
+    }
+    
   }
   
   .links {

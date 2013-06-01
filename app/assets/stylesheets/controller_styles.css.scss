@@ -14,6 +14,9 @@
           background: $weCollaborateYellow;
         }
       }
+      .active {
+        background: $weCollaborateYellow;
+      }
     }
   }
 
@@ -56,6 +59,9 @@
         &:hover {
           background: $weCollaborateRed;
         }
+      }
+      .active {
+        background: $weCollaborateRed;
       }
     }
   }

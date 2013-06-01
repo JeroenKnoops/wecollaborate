@@ -42,14 +42,20 @@
     .side-bar
       .box.orange-box
         Participate
-
   .row-fluid
     .main
       .box.box-bordered
         .title
           Project Details
       .box.box-bordered= @project.details.html_safe    
-            
+    .side-bar
+      .box.box-bordered
+        .title Other projects
+      - @other_projects.each do |p|
+        .box.box-bordered
+          .other-projects= link_to p.title, p
+      
+    
 :javascript
   $('#project_image').load(function () {
     $('.project-header-row .side-bar').css('height',$('#project_image').css('height'));

@@ -28,4 +28,8 @@ class Project < ActiveRecord::Base
   def self.default
     where(:title => "Bike Club").first || 1
   end
+  
+  def other_projects
+    Project.where("projects.id != ? and projects.status = ?", self.id, true)
+  end
 end
