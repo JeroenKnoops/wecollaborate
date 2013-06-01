@@ -177,6 +177,16 @@ footer {
     height: 33px;
   }
 
+  .logo-footer {
+    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small__3.png') no-repeat top left;
+    width: 192px;
+    height: 31px;
+    margin-bottom: 20px;
+    float: left;
+    &:hover {
+      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png') no-repeat top left;
+    }
+  }
   
 }
 
