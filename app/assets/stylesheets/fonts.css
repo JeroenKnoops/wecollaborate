@@ -2,7 +2,7 @@
 /*@font-face {
   font-family: AkkoRounded;
   src: url('AkkoRoundedW01-Black.eot');
-  src: local('☺'), url('AkkoRoundedW01-Black.woff') format('woff'), url('AkkoRoundedW01-Black.ttf') format('truetype'), url('AkkoRoundedW01-Black.svg') format('svg');
+  src: local('banaan'), url('AkkoRoundedW01-Black.woff') format('woff'), url('AkkoRoundedW01-Black.ttf') format('truetype'), url('AkkoRoundedW01-Black.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 /*@font-face {
   font-family: AkkoRounded;
   src: url('AkkoRoundedW01-BlackItalic.eot');
-  src: local('☺'), url('AkkoRoundedW01-BlackItalic.woff') format('woff'), url('AkkoRoundedW01-BlackItalic.ttf') format('truetype'), url('AkkoRoundedW01-BlackItalic.svg') format('svg');
+  src: local('banaan'), url('AkkoRoundedW01-BlackItalic.woff') format('woff'), url('AkkoRoundedW01-BlackItalic.ttf') format('truetype'), url('AkkoRoundedW01-BlackItalic.svg') format('svg');
   font-weight: bold;
   font-style: italic;
 }
@@ -19,7 +19,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Bold.eot');
-	src: local('☺'), url('AkkoRoundedW01-Bold.woff') format('woff'), url('AkkoRoundedW01-Bold.ttf') format('truetype'), url('AkkoRoundedW01-Bold.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-Bold.woff') format('woff'), url('AkkoRoundedW01-Bold.ttf') format('truetype'), url('AkkoRoundedW01-Bold.svg') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -28,7 +28,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-BoldItalic.eot');
-	src: local('☺'), url('AkkoRoundedW01-BoldItalic.woff') format('woff'), url('AkkoRoundedW01-BoldItalic.ttf') format('truetype'), url('AkkoRoundedW01-BoldItalic.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-BoldItalic.woff') format('woff'), url('AkkoRoundedW01-BoldItalic.ttf') format('truetype'), url('AkkoRoundedW01-BoldItalic.svg') format('svg');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -38,7 +38,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Italic.eot');
-	src: local('☺'), url('AkkoRoundedW01-Italic.woff') format('woff'), url('AkkoRoundedW01-Italic.ttf') format('truetype'), url('AkkoRoundedW01-Italic.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-Italic.woff') format('woff'), url('AkkoRoundedW01-Italic.ttf') format('truetype'), url('AkkoRoundedW01-Italic.svg') format('svg');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -47,7 +47,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Light.eot');
-	src: local('☺'), url('AkkoRoundedW01-Light.woff') format('woff'), url('AkkoRoundedW01-Light.ttf') format('truetype'), url('AkkoRoundedW01-Light.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-Light.woff') format('woff'), url('AkkoRoundedW01-Light.ttf') format('truetype'), url('AkkoRoundedW01-Light.svg') format('svg');
   font-weight: light; 
 	font-style: normal;
 }
@@ -56,7 +56,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-LightItalic.eot');
-	src: local('☺'), url('AkkoRoundedW01-LightItalic.woff') format('woff'), url('AkkoRoundedW01-LightItalic.ttf') format('truetype'), url('AkkoRoundedW01-LightItalic.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-LightItalic.woff') format('woff'), url('AkkoRoundedW01-LightItalic.ttf') format('truetype'), url('AkkoRoundedW01-LightItalic.svg') format('svg');
 	font-weight: light;
 	font-style: italic;
 }
@@ -65,7 +65,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Medium.eot');
-	src: local('☺'), url('AkkoRoundedW01-Medium.woff') format('woff'), url('AkkoRoundedW01-Medium.ttf') format('truetype'), url('AkkoRoundedW01-Medium.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-Medium.woff') format('woff'), url('AkkoRoundedW01-Medium.ttf') format('truetype'), url('AkkoRoundedW01-Medium.svg') format('svg');
 	font-weight: medium;
 	font-style: normal;
 }
@@ -74,7 +74,7 @@
 @font-face {
 	font-family: 'AkkoRoundedW01';
 	src: url('AkkoRoundedW01-MediumItalic.eot');
-	src: local('☺'), url('AkkoRoundedW01-MediumItalic.woff') format('woff'), url('AkkoRoundedW01-MediumItalic.ttf') format('truetype'), url('AkkoRoundedW01-MediumItalic.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-MediumItalic.woff') format('woff'), url('AkkoRoundedW01-MediumItalic.ttf') format('truetype'), url('AkkoRoundedW01-MediumItalic.svg') format('svg');
 	font-weight: medium;
 	font-style: italic;
 }
@@ -83,7 +83,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Regular.eot');
-	src: local('☺'), url('AkkoRoundedW01-Regular.woff') format('woff'), url('AkkoRoundedW01-Regular.ttf') format('truetype'), url('AkkoRoundedW01-Regular.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-Regular.woff') format('woff'), url('AkkoRoundedW01-Regular.ttf') format('truetype'), url('AkkoRoundedW01-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -92,7 +92,7 @@
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Thin.eot');
-	src: local('☺'), url('AkkoRoundedW01-Thin.woff') format('woff'), url('AkkoRoundedW01-Thin.ttf') format('truetype'), url('AkkoRoundedW01-Thin.svg') format('svg');
+	src: local('banaan'), url('AkkoRoundedW01-Thin.woff') format('woff'), url('AkkoRoundedW01-Thin.ttf') format('truetype'), url('AkkoRoundedW01-Thin.svg') format('svg');
 	font-weight: thin;
 	font-style: normal;
 }
