@@ -333,6 +333,7 @@ top:2px;
   background: white;
   margin-bottom: 15px;
   @include alpha85;
+  zoom: 1;
 }
 
 .box-bordered {
@@ -365,6 +366,8 @@ top:2px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+	filter: none;
+	-ms-filter: none;
 }
 
 .orange-box {
@@ -378,6 +381,8 @@ top:2px;
   font-weight: bold;
   text-align: center;
   display: block;
+	filter: none;
+	-ms-filter: none;
   a {
     color: white;
     text-decoration: none;

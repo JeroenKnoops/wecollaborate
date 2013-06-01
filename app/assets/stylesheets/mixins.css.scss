@@ -7,6 +7,7 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff);
 	/* For IE 8*/
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff)";
+  zoom: 1;
 }
 
 @mixin alpha75 {
@@ -18,6 +19,7 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccfffff, endColorstr=#ccfffff);
 	/* For IE 8*/
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff)";
+  zoom: 1;
 }
 
 @mixin alpha85 {
@@ -26,9 +28,10 @@
 	/* RGBa with 0.75 opacity */
 	background: rgba(255, 255, 255, 0.85);
 	/* For IE 5.5 - 7*/
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e3000000, endColorstr=#e3000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccfffff, endColorstr=#ccfffff);
 	/* For IE 8*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e3000000, endColorstr=#e3000000)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff)";
+  zoom: 1;
 }
 
 @mixin box_sizing {
