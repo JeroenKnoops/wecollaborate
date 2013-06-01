@@ -609,7 +609,6 @@ top:2px;
 	border-top: 12px solid rgba(255, 205, 11, 0.6);
 }
 
-
 #project_page {
   .main {
     margin-left: 0px;
@@ -627,7 +626,10 @@ top:2px;
       bottom: 0px;
       display: none;
     }
+  }
   
+  .project-header-row .side-bar {
+    min-height: 300px;
   }
   
   .title {
@@ -681,6 +683,14 @@ top:2px;
 
   .phase-red {
     background: $weCollaborateRed;
+  }
+ 
+  .phase-green {
+    background: $weCollaborateGreen;
+  }
+
+  .phase-yellow {
+    background: $weCollaborateYellow;
   }
   
 }

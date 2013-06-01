@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @project = Project.active.first
   end
 
   def help

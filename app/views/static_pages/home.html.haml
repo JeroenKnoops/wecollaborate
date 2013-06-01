@@ -28,16 +28,15 @@
   .box.horizontal-info
     .row-fluid
       .span8
-        .image= image_tag "projects/tingle_small.png"
+        .image= image_tag @project.project_image_url
       .span4
-        .tag Technology
-        .title Tingle
+        .tag= @project.categories.map(&:title).join('/')
+        .title= @project.title
         .author
           by
-          %strong Rhys Duindman
-        .description
-          Tingle is an electronic musical instrument developed by Rhys Duindman. He needs help developing and refining the ...
-        .link= link_to "find out more", construction_path
+          %strong= @project.initiator.email
+        .description= @project.phrase
+        .link= link_to "find out more", @project
   .box.banner
     .title Our community
   .row-fluid
