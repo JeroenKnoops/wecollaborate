@@ -77,3 +77,11 @@
 }
 
 
+@font-face {
+	font-family: 'Gotham-Book';
+	src: url('Gotham-Book.eot');
+	src: local('banaan'), url('Gotham-Book.woff') format('woff'), url('Gotham-Book.ttf') format('truetype'), url('Gotham-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

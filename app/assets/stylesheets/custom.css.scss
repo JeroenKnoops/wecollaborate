@@ -1,6 +1,7 @@
 $gridColumnWidth: 80px;
 @import "variables";
 
+$baseFontFamily:  'Gotham-Book';
 @import "bootstrap";
 @import "fonts";
 
@@ -78,9 +79,10 @@ textarea {
     display: inline;
     a {
       color: $weCollaborateOffBlack;
-      font-size: 1.5em;
+      font-size: 20px;
       font-family: 'AkkoRounded';
       padding: 5px 10px;
+      letter-spacing: 0.01em;
       &:hover {
         text-decoration:none;
         background: $weCollaborateYellow;
@@ -382,9 +384,9 @@ top:2px;
 .blue-box {
   background: $weCollaborateBlue;
   color: white;
-  padding: 15px;
-  font-size: 35px;
-  line-height: 35px;
+  padding: 15px 8px;
+  font-size: 39px;
+  line-height: 1.1em;
   font-family: 'AkkoRounded';
   text-transform: uppercase;
   text-align: center;
@@ -396,8 +398,8 @@ top:2px;
   background: $weCollaborateRed;
   color: white;
   padding: 15px;
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 54px;
+  line-height: 1.1em;
   font-family: 'AkkoRounded';
   text-transform: uppercase;
   text-align: center;
@@ -417,22 +419,25 @@ top:2px;
 .update-box {
   padding: 10px;
   .title {
-    font-size: 22px;
+    color: $weCollaborateOffBlack;
+    font-size: 24px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';
     font-style: italic;
+    letter-spacing: 0.01em;
   }
+  font-size: 12px;
 }
 
 .quote {
   padding: 10px;
   color: $weCollaborateOffBlack;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.1em;
   font-family: 'AkkoRounded';
   font-style: italic;
   .title {
-    color: black;
+    color: $weCollaborateOffBlack;
   }
 }
 
@@ -481,25 +486,37 @@ top:2px;
 }
 
 .vertical-info {
+  margin-bottom: 25px;
+  .image {
+    padding-bottom: 10px;
+  }
   .title {
     color: $weCollaborateOffBlack;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';
-    font-weight: bold;
+    letter-spacing: 0.01em;
   }
   .sub-title {
     color: $weCollaborateOffBlack;
-    font-size: 20px;
-    line-height: 1.1em;
+    font-size: 16px;
+    line-height: 1.0em;
     font-family: 'AkkoRounded';
-    font-weight: bold;
+    letter-spacing: 0.01em;
   }
   .description {
-    padding: 10px;
+    font-size: 12px;
+    padding-bottom: 10px;
   }
   .link {
     font-size: 0.8em;
+  }
+  ul {
+    margin: 0px;
+    li {
+      list-style: none;
+      font-size: 14px;
+    }
   }
 }
 
