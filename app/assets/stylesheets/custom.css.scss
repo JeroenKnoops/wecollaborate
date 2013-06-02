@@ -455,6 +455,20 @@ top:2px;
 }
 
 .horizontal-info {
+  
+  #project-info {
+    height: 100%;
+    position: relative;
+
+    .skills-container {
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      display: none;
+      padding-bottom: 2px;
+    }
+  }
+  
   .tag {
     font-size: 8px;
     text-transform: uppercase;
@@ -471,6 +485,53 @@ top:2px;
     font-family: 'AkkoRounded';
     font-size: 12px;
   }
+  
+  .phase {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.0em;
+    font-family: 'AkkoRounded';
+    letter-spacing: 0.01em;
+    margin-right: 5px;
+  }
+
+  .phase-red {
+    color: white;
+    background: $weCollaborateRed;
+  }
+  .phase-green {
+    color: white;
+    background: $weCollaborateGreen;
+  }
+  .phase-yellow {
+    color: white;
+    background: $weCollaborateYellow;
+  }
+
+  .sub-title {
+    color: $weCollaborateOffBlack;
+    font-size: 14px;
+    line-height: 1.0em;
+    font-family: 'AkkoRounded';
+    letter-spacing: 0.01em;
+  }
+
+  ul {
+    margin: 0px;
+    li {
+      list-style: none;
+      font-size: 12px;
+    }
+  }
+  
+  .stats {
+    font-size: 8px;
+    .number {
+      display: inline;
+      font-size: 12px;
+    }
+  }
+  
 }
 
 .banner {

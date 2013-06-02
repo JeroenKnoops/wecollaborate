@@ -24,15 +24,42 @@
   .box.horizontal-info
     .row-fluid
       .span8
-        .image= image_tag @project.project_image_url
-      .span4
+        .image= image_tag @project.project_image_url, :id => :project_image
+      .span4#project-info
         .tag= @project.categories.map(&:title).join('/')
         .title= @project.title
         .author
           by
           %strong= @project.initiator.email
         .description= @project.phrase
-        .link= link_to "find out more", @project
+        .skills-container
+          .row-fluid.skills
+            .span6
+              .sub-title Skills needed
+              %ul
+                - @project.skills.each do |skill|
+                  %li= skill.title
+            .span6
+              .sub-title Skills involved
+              %ul
+                - @project.skills.each do |skill|
+                  %li= skill.title
+          .phase{:class => "phase-#{@project.phase.color}"}
+            = "#{@project.phase.title} Phase"
+          .row-fluid.stats
+            .span6{:style => "min-height: 0px"}
+              .number 69
+              days in progress
+            .span6{:style => "min-height: 0px"}
+              .number 27
+              Participants
+        :javascript
+          $('#project_image').load(function () {            $('#project-info').css('height',$('#project_image').css('height'));
+            $('.skills-container').show();
+          })
+    
+          
+              
   .box.banner
     .title Our community
   .row-fluid
