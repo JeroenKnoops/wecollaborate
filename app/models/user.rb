@@ -20,6 +20,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   validates :email, confirmation: true
+  validates_presence_of :fullname
   
   after_create :create_activity_record
   

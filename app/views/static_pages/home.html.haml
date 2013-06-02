@@ -30,7 +30,7 @@
         .title= @project.title
         .author
           by
-          %strong= @project.initiator.email
+          %strong= @project.initiator.fullname
         .description= @project.phrase
         .skills-container
           .row-fluid.skills
@@ -58,8 +58,7 @@
             $('.skills-container').show();
           })
     
-          
-              
+        
   .box.banner
     .title Our community
   .row-fluid

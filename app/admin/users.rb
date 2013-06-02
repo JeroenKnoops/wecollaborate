@@ -1,5 +1,6 @@
 ActiveAdmin.register User do
   index do
+    column "Fullname", :fullname
     column "Email", :email
     column "Last login", :updated_at
     default_actions
