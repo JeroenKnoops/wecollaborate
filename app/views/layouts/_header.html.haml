@@ -16,7 +16,7 @@
         
     .row-fluid{:style => "padding-top: 10px"}
       %ul.span12
-        = active_link_to 'Find Projects'.html_safe, project_path(Project.default), :wrap_tag => :li
+        = active_link_to 'Find Projects'.html_safe, projects_path, :wrap_tag => :li
         = active_link_to 'Our Community'.html_safe, construction_path, :wrap_tag => :li
         = active_link_to 'Creative Jams'.html_safe, construction_path, :wrap_tag => :li
         = active_link_to 'About Us'.html_safe, construction_path, :wrap_tag => :li

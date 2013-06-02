@@ -5,8 +5,10 @@ describe "Static pages" do
   subject { page }
   
   describe "Home page" do
-    before { visit home_path }
-  
+    before { 
+      create :project
+      visit home_path 
+    }
     it { should have_selector('div', text: 'Our community') }
   end
   

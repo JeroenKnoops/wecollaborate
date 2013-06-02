@@ -9,7 +9,7 @@ Wecollaborate::Application.routes.draw do
 
   resources :friendships
 
-  resources :projects, :only => [:show]
+  resources :projects, :only => [:show, :index]
   
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "authentications#create", registrations: "registrations"}
   ActiveAdmin.routes(self)

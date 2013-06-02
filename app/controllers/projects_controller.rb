@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.active
+    redirect_to Project.default
   end
     
   def show
