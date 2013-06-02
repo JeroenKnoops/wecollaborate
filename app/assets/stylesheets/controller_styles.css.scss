@@ -1,9 +1,42 @@
-#static_pages_controller {
+@mixin defaults($color) {
+  @if $color == 'yellow' {
+    $logo: '/assets/logo_and_buttons/WeCollaborate_Logo_3.png';
+    $logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Hover_3.png';
+    $main_color: $weCollaborateYellow;
+    $twitter: '/assets/logo_and_buttons/Twitter_3.png';
+    $facebook: '/assets/logo_and_buttons/Facebook_3.png';
+    $small_logo: '/assets/logo_and_buttons/WeCollaborate_Logo_Small__3.png';
+    $small_logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png';
+    @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
+  } 
+  @if $color == 'red' {
+    $logo: '/assets/logo_and_buttons/WeCollaborate_Logo_2.png';
+    $logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Hover_2.png';
+    $main_color: $weCollaborateRed;
+    $twitter: '/assets/logo_and_buttons/Twitter_2.png';
+    $facebook: '/assets/logo_and_buttons/Facebook_2.png';
+    $small_logo: '/assets/logo_and_buttons/WeCollaborate_Logo_Small__2.png';
+    $small_logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_2.png';
+    @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
+  } 
+  @if $color == 'blue' {
+    $logo: '/assets/logo_and_buttons/WeCollaborate_Logo_1.png';
+    $logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Hover_1.png';
+    $main_color: $weCollaborateBlue;
+    $twitter: '/assets/logo_and_buttons/Twitter_1.png';
+    $facebook: '/assets/logo_and_buttons/Facebook_1.png';
+    $small_logo: '/assets/logo_and_buttons/WeCollaborate_Logo_Small__1.png';
+    $small_logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_1.png';
+    @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
+  } 
+}
+
+@mixin defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover) {
   /* Header */
   .logo {
-    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_3.png') no-repeat top left;
+    background: url($logo) no-repeat top left;
     &:hover {
-      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_3.png') no-repeat top left;
+      background: url($logo_hover) no-repeat top left;
     }
   }
 
@@ -11,11 +44,11 @@
     ul li {
       a {
         &:hover {
-          background: $weCollaborateYellow;
+          background: $main_color;
         }
       }
       .active {
-        background: $weCollaborateYellow;
+        background: $main_color;
       }
     }
   }
@@ -23,69 +56,39 @@
   /* Footer */
   footer {
     h2 {
-      color: $weCollaborateYellow;
+      color: $main_color;
     }
     
     .twitter-logo {
-      background: url('/assets/logo_and_buttons/Twitter_3.png') no-repeat top left;
+      background: url($twitter) no-repeat top left;
     }
   
     .facebook-logo {
-      background: url('/assets/logo_and_buttons/Facebook_3.png') no-repeat top left;
+      background: url($facebook) no-repeat top left;
     }
     
     .logo-footer {
-      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small__3.png') no-repeat top left;
+      background: url($small_logo) no-repeat top left;
       &:hover {
-        background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png') no-repeat top left;
+        background: url($small_logo_hover) no-repeat top left;
       }
     }
-    
   }
+}
+
+#static_pages_controller {
+  @include defaults('yellow');
 }
 
 #projects_controller {
-  /* Header */
-  .logo {
-    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_2.png') no-repeat top left;
-    &:hover {
-      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_2.png') no-repeat top left;
-    }
-  }
-
-  .navigation-bar {
-    ul li {
-      a {
-        &:hover {
-          background: $weCollaborateRed;
-        }
-      }
-      .active {
-        background: $weCollaborateRed;
-      }
-    }
-  }
-
-  /* Footer */
-  footer {
-    h2 {
-      color: $weCollaborateRed;
-    }
-    
-    .twitter-logo {
-      background: url('/assets/logo_and_buttons/Twitter_2.png') no-repeat top left;
-    }
-  
-    .facebook-logo {
-      background: url('/assets/logo_and_buttons/Facebook_2.png') no-repeat top left;
-    }
-    
-    .logo-footer {
-      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small__2.png') no-repeat top left;
-      &:hover {
-        background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_2.png') no-repeat top left;
-      }
-    }
-    
-  }
+  @include defaults('red');
 }
+
+#about_page {
+  @include defaults('red');
+}
+
+#registrations_controller {
+  @include defaults('blue');
+}
+

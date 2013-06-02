@@ -20,20 +20,14 @@ describe "Static pages" do
 
   describe "About page" do
     before { visit about_path }
-
-    it { should have_selector('h1', text: 'About us') }
+    
+    it { should have_selector('div', text: 'What is WeCollaborate?') }
   end
 
   describe "Contact page" do
     before { visit contact_path }
     
     it { should have_selector('h1', text: 'Contact') }
-  end
-
-  describe "about page" do
-    before { visit about_path }
-    it { should have_selector('div', text: 'BETA') }
-  
   end
 
   describe "under construction page" do

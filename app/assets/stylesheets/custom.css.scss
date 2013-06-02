@@ -230,6 +230,13 @@ footer {
 .side-bar {
   width: 257px;
   float: left;
+  &:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+  }
 }
 
 .main {
@@ -604,88 +611,5 @@ top:2px;
 	border-top: 12px solid rgba(255, 205, 11, 0.6);
 }
 
-#project_page {
-  .main {
-    margin-left: 0px;
-    margin-right: 21px;
-    height: 100%;
-  }
-  
-  .side-bar {
-    height: 100%;
-    position: relative;
-
-    .skills-container {
-      width: 100%;
-      position: absolute;
-      bottom: 0px;
-      display: none;
-    }
-  }
-  
-  .project-header-row .side-bar {
-    min-height: 377px;
-  }
-  
-  .title {
-    font-family: 'AkkoRounded';
-    font-weight: bold;
-    font-size: 2.2em;
-    line-height: 1.0em;
-    
-    color: $weCollaborateOffBlack;
-  }
-  
-  #title {
-    .title {
-      font-size: 2.5em;
-    }
-  }
-  
-  .box-reward {
-    width: 60%;
-  }
-  
-  .reward {
-    padding: 5px;
-    color: white;
-    .title {
-      color: white;
-      font-size: 1.5em;
-    }
-  }
-  
-  .reward-turquoise {
-    background: $weCollaborateTurquoise;
-  }
-
-  .box-phase {
-    width: 60%;
-  }
-
-  .phase {
-    padding: 5px;
-    color: white;
-    .title {
-      color: white;
-      font-size: 1.5em;
-    }
-  }
-  
-  .phase-turquoise {
-    background: $weCollaborateTurquoise;
-  }
-
-  .phase-red {
-    background: $weCollaborateRed;
-  }
- 
-  .phase-green {
-    background: $weCollaborateGreen;
-  }
-
-  .phase-yellow {
-    background: $weCollaborateYellow;
-  }
-  
-}
+@import "project";
+@import "about";

@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+    @css_body_id = 'about_page'
   end
 
   def contact

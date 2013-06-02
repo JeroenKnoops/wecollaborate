@@ -1,0 +1,24 @@
+#about_page {
+  .main {
+    margin-left: 0px;
+    margin-right: 21px;
+    height: 100%;
+  }
+  
+  .side-bar {
+    height: 100%;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 22px;
+    line-height: 1.1em;
+    font-family: 'AkkoRounded';
+    font-style: italic;
+    @include alpha85;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+ 
+}

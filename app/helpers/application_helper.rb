@@ -8,4 +8,8 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"
     end
   end
+  
+  def body_id
+    @css_body_id ? @css_body_id : "#{params[:controller].parameterize}_controller"
+  end
 end
