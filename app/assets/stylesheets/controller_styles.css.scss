@@ -74,6 +74,12 @@
       }
     }
   }
+  .horizontal-info {
+    &:hover {
+      background: $main_color;
+    };
+  }
+
 }
 
 #static_pages_controller {

@@ -455,7 +455,7 @@ top:2px;
 }
 
 .horizontal-info {
-  
+
   #project-info {
     height: 100%;
     position: relative;
@@ -532,6 +532,12 @@ top:2px;
     }
   }
   
+  &:hover {
+    color: white;
+    background: $weCollaborateYellow;
+    cursor: hand; 
+    cursor: pointer; 
+  };
 }
 
 .banner {
@@ -579,6 +585,12 @@ top:2px;
       font-size: 14px;
     }
   }
+  &:hover {
+    color: white;
+    background: $weCollaborateYellow;
+    cursor: hand; 
+    cursor: pointer; 
+  };
 }
 
 .hexagons {
