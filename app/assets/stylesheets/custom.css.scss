@@ -32,6 +32,7 @@ body {
   background-position: center;
 }
 
+
 section {
   overflow: auto;
 }
@@ -141,7 +142,7 @@ h3 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.7em;
+  line-height: 1.3em;
 }
 
 /* footer */
@@ -699,6 +700,30 @@ top:2px;
 	border-left: 22px solid transparent;
 	border-right: 22px solid transparent;
 	border-top: 12px solid rgba(255, 205, 11, 0.6);
+}
+
+.title {
+  color: $weCollaborateOffBlack;
+  font-size: 24px;
+  line-height: 1.1em;
+  font-family: 'AkkoRounded';
+  letter-spacing: 0.01em;
+}
+
+#registrations_controller {
+  .title {
+    padding-bottom: 10px;
+  }
+  p {
+    padding-bottom: 10px;
+  }
+  button {
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
 }
 
 @import "project";

@@ -1,38 +1,37 @@
-
 .row-fluid
-  .box.span4
-    %h2 Log in
-    %p Please log in to continue.
-    = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
-      = f.input :email, :autofocus => true, placeholder: 'Email', :label => false
-      - if devise_mapping.recoverable? && controller_name != 'passwords'
-        %div{:style=>"float: right; font-size: 10px"}= link_to "I forgot my password", new_password_path(resource_name)
-      = f.input :password, placeholder: 'Password', :label => false
-      = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
-      = f.button :submit, "Log me in!", :class => 'btn-wecollaborate'
-  
-  
-  .box.span4
-    %h2 Join WeCollaborate
-    %p A WeCollaborate account is required to participate on this platform.
-    = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
-    
-      / = devise_error_messages!
-  
-      = f.input :email, :required => true, :autofocus => true, placeholder: 'Email', :label => false
-
-      - if @user.password_required? 
-        = f.input :password, :required => true , placeholder: 'Password', :label => false
-        = f.input :password_confirmation, :required => true, placeholder: 'Re-enter password', :label => false
-        
-      = f.button :submit, 'Join!', :class => 'btn-wecollaborate'
-  
-  .box.span4
-    %h2 Login with Facebook
-    %p Its fast and easy.
-    = link_to "<button class='btn btn-wecollaborate'>login with facebook</button>".html_safe, user_omniauth_authorize_path('facebook') 
+  .span4
+    .box.box-bordered
+      .title Join WeCollaborate
+      %p We inform you of our progress and we will let you know when you can use the online platform.
+      = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
       
+        / = devise_error_messages!
+
+        = f.input :fullname, :required => true, :autofocus => true, placeholder: 'Fullname', :label => false
+    
+        = f.input :email, :required => true, placeholder: 'Email', :label => false
+        .sub-text{:style =>  "margin-top:-20px;"} Used for project and account notifications.
+        
+        = f.input :email_confirmation, :required => true, placeholder: 'Re-enter Email', :label => false
   
+        - if @user.password_required? 
+          = f.input :password, :required => true , placeholder: 'Password', :label => false
+          = f.input :password_confirmation, :required => true, placeholder: 'Re-enter password', :label => false
+        
+        .row-fluid
+          .span1= f.check_box :newsletter, :checked => true 
+          .span8= f.label :newsletter, "Keep up to date with our regular newsletter" 
+        %div{:style => "clear:both; height: 10px;"}
+        .sub-text By signing up you agree to our terms of use and privacy policy.
+          
+        = f.button :submit, 'Join!', :class => 'btn-wecollaborate'
+  .span4  
+    .box.box-bordered
+      .title Sign Up with Facebook
+      %p Its fast and easy.
+      = link_to "<button class='btn btn-wecollaborate'>Sign Up with facebook</button>".html_safe, user_omniauth_authorize_path('facebook') 
+      .sub-text We'll never post anything without your permission.  
+    
 .row-fluid
-  .box.span12= render "devise/shared/links"
+  .box.span12= # render "devise/shared/links"
   

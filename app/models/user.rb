@@ -16,9 +16,11 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible  :fullname, :email, :password, :password_confirmation, :remember_me, :email_confirmation, :newsletter
   # attr_accessible :title, :body
 
+  validates :email, confirmation: true
+  
   after_create :create_activity_record
   
   scope :recent, lambda {|number| order("created_at desc").limit(number)}
