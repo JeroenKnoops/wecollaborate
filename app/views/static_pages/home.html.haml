@@ -2,27 +2,23 @@
 .side-bar
   .box
     .quote "WeCollaborate is a community of people who help and support each other in bringing their ideas to life."
-    .link= link_to "find out more", construction_path
-  .box.blue-box
+  .box.red-box
     Start a Project
+  .box.blue-box
+    Join a creative jam
   .box.update-box
-    .title Recent Jam Session
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-    .link= link_to "find out more", construction_path
+    .title Recent Creative Jam
+    On May 11th 14 people turned up to the Creative Jam in Eindhoven. 3 projects were launched and 5 people will con..
   .box.update-box
     .title Tingle Update
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-    .link= link_to "find out more", construction_path
-  .box.orange-box
-    Join a 
-    %br
-    Jam Session
+    Thanks for the support last week. As a result Tiddo Bakker and I are developing the a meterial which is suitable to the instru.. 
   .box.blue-box
-    Join a Project
+    Find a Project
   .box.update-box
-    .title Jazz Band Update
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-    .link= link_to "find out more", construction_path
+    .title Bike Club Update
+    We have reached 20 participants!!! 
+    %br
+    Thanks for all the inspiration, ideas and contacts. It looks we are on track to.. 
 
 .main
   .box.horizontal-info
@@ -40,5 +36,9 @@
   .box.banner
     .title Our community
   .row-fluid
-    .span6=render :partial => 'person_box', :locals => {:image_url => "people/tobias.png", :name => "Tobias Janssen", :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ldsdjkfs dsajfsdlkjf lksdjf sda. Ut enim ad minim veniam, quis nostrud exercitation ul", :skills => ["Woodwork", "Design"], :collaborations => ["Drawality", "Creation of a strange.."] } 
-    .span6=render :partial => 'person_box', :locals => {:image_url => "people/conor.png", :name => "Conor Trawinski", :badge => "initiator", :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ldsdjkfs dsajfsdlkjf lksdjf sda. Ut enim ad minim veniam, quis nostrud exercitation ul", :skills => ["Woodwork", "Design"], :collaborations => ["Drawality", "Creation of a strange.."] } 
+    .span6
+      =render :partial => 'person_box', :locals => {:image_url => "people/conor.png", :name => "Conor Trawinski", :badge => "initiator", :description => "I am the initiator of WeCollaborate and I love to be involved in new and inspiring projects. I want to meet new people...", :skills => ["Photography", "Design"], :collaborations => [ "Tingle", "Drawality"] } 
+      =render :partial => 'person_box', :locals => {:image_url => "people/jeroen.jpg", :name => "Jeroen van IJzendoorn", :description => "I am looking for to collaborating and networking in a less formal atmosphere. For me WeCollaborate is about the Creat...", :skills => ["Business", "Marketing"], :collaborations => [ "WeCollaborate", "The Other Market"] } 
+    .span6
+      =render :partial => 'person_box', :locals => {:image_url => "people/laura.jpg", :name => "Laura Koenen", :description => "I am a student at the Design Academy in Eindhoven and I am interested in working with multi disciplinary teams in the cont..", :skills => ["Design Research", "Graphic Design"], :collaborations => ["Drawality"] } 
+      =render :partial => 'person_box', :locals => {:image_url => "people/tomas.jpg", :name => "Tomas Pieters", :badge => "initiator", :description => "I am an artist passionate about working with other people. Recently I initiated drawality so I would have the possibility", :skills => ["Drawing", "Photography"], :collaborations => ["Bike Club", "Drawality"] }

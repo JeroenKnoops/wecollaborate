@@ -80,7 +80,6 @@ textarea {
       color: $weCollaborateOffBlack;
       font-size: 1.5em;
       font-family: 'AkkoRounded';
-      font-weight: bold;
       padding: 5px 10px;
       &:hover {
         text-decoration:none;
@@ -366,7 +365,6 @@ top:2px;
   line-height: 45px;
   font-family: 'AkkoRounded';
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center;
   display: block;
   .sub {
@@ -378,17 +376,16 @@ top:2px;
   background: $weCollaborateBlue;
   color: white;
   padding: 15px;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 35px;
   font-family: 'AkkoRounded';
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center;
 	filter: none;
 	-ms-filter: none;
 }
 
-.orange-box {
+.red-box {
   background: $weCollaborateRed;
   color: white;
   padding: 15px;
@@ -396,7 +393,6 @@ top:2px;
   line-height: 45px;
   font-family: 'AkkoRounded';
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center;
   display: block;
 	filter: none;
@@ -417,7 +413,6 @@ top:2px;
     font-size: 22px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';
-    font-weight: bold;
     font-style: italic;
   }
 }
@@ -425,11 +420,13 @@ top:2px;
 .quote {
   padding: 10px;
   color: $weCollaborateOffBlack;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.1em;
   font-family: 'AkkoRounded';
-  font-weight: bold;
   font-style: italic;
+  .title {
+    color: black;
+  }
 }
 
 .link {
@@ -456,7 +453,6 @@ top:2px;
     font-size: 30px;
     line-height: 1.1em;
     font-family: 'AkkoRounded';
-    font-weight: bold;
   }
   
   .author {
@@ -466,14 +462,13 @@ top:2px;
 }
 
 .banner {
-  padding: 40px;
+  padding: 20px;
   .title {
     color: $weCollaborateOffBlack;
     font-size: 50px;
-    line-height: 1.1em;
+    line-height: 1.0em;
     font-family: 'AkkoRounded';
-    font-weight: bold;
-    text-align: center;
+//    font-weight: bold;
     text-transform: uppercase;
   }
 }

@@ -1,12 +1,12 @@
-@font-face {
-	font-family: AkkoRounded;
-	src: url('AkkoRoundedW01-Regular.eot');
-	src: local('banaan'), url('AkkoRoundedW01-Regular.woff') format('woff'), url('AkkoRoundedW01-Regular.ttf') format('truetype'), url('AkkoRoundedW01-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+/*@font-face {
+  font-family: AkkoRounded;
+  src: url('AkkoRoundedW01-Regular.eot');
+  src: local('banaan'), url('AkkoRoundedW01-Regular.woff') format('woff'), url('AkkoRoundedW01-Regular.ttf') format('truetype'), url('AkkoRoundedW01-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-
+*/
 @font-face {
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Thin.eot');
@@ -65,8 +65,6 @@
 	font-family: AkkoRounded;
 	src: url('AkkoRoundedW01-Medium.eot');
 	src: local('banaan'), url('AkkoRoundedW01-Medium.woff') format('woff'), url('AkkoRoundedW01-Medium.ttf') format('truetype'), url('AkkoRoundedW01-Medium.svg') format('svg');
-	font-weight: medium;
-	font-style: normal;
 }
 
 
