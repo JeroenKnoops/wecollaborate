@@ -1,7 +1,30 @@
 .hexagons
   - (rand(5) + 2).times do
-    .hexagon-red{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+    .hexagon-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag  'background_shapes/hex-red.png'
   - (rand(5) + 2).times do
-    .hexagon-blue{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+    .hexagon-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag  'background_shapes/hex_blue.png'
   - (rand(5) + 2).times do
-    .hexagon-yellow{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+    .hexagon-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag 'background_shapes/hex_yel.png'
+
+  - (rand(3) + 1).times do
+    .triangle-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag 'background_shapes/tri1_blue.png'
+  - (rand(3) + 1).times do
+    .triangle-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag 'background_shapes/tri1_red.png'
+  - (rand(3) + 1).times do
+    .triangle-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag 'background_shapes/tri1_yel.png'
+
+  - (rand(3) + 1).times do
+    .triangle-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag 'background_shapes/tri2_blue.png'
+  - (rand(3) + 1).times do
+    .triangle-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag 'background_shapes/tri2_red.png'
+  - (rand(3) + 1).times do
+    .triangle-box{:style => "top: #{(rand(1400) - 200)}px; left: #{(rand(1400) - 200)}px"}
+      = image_tag 'background_shapes/tri2_yel.png'

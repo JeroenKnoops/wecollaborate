@@ -11,6 +11,7 @@ $baseFontFamily:  'Gotham-Book';
 
 @import "badge";
 @import "ribbon";
+@import "hexagons";
 
 @import "controller_styles";
 
@@ -618,113 +619,6 @@ top:2px;
   }
 }
 
-.hexagons {
-  top: 0px;
-  left: 0px;
-  height: 0px;
-}
-
-.hexagon-red {
-	width: 44px;
-	height: 26px;
-	background: rgba(255, 0, 0, 0.6);
-	position: relative;
-  top: 198px;
-  left: 55px;
-  z-index: -1;
-}
-
-.hexagon-red:before {
-	content: "";
-	position: absolute;
-	top: -13px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-bottom: 13px solid rgba(255, 0, 0, 0.6);
-}
-
-.hexagon-red:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-top: 12px solid rgba(255, 0, 0, 0.6);
-}
-
-.hexagon-blue {
-	width: 44px;
-	height: 26px;
-	background: rgba(0, 0, 255, 0.6);
-	position: relative;
-  top: 354px;
-  left: 964px;
-  z-index: -1;
-}
-
-.hexagon-blue:before {
-	content: "";
-	position: absolute;
-	top: -13px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-bottom: 13px solid rgba(0, 0, 255, 0.6);
-}
-
-.hexagon-blue:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-top: 12px solid rgba(0, 0, 255, 0.6);
-}
-
-.hexagon-yellow {
-	width: 44px;
-	height: 26px;
-	background: rgba(255, 205, 11, 0.6);
-	position: relative;
-  top: 354px;
-  left: 964px;
-  z-index: -1;
-}
-
-.hexagon-yellow:before {
-	content: "";
-	position: absolute;
-	top: -13px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-bottom: 13px solid rgba(255, 205, 11, 0.6);
-}
-
-.hexagon-yellow:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-top: 12px solid rgba(255, 205, 11, 0.6);
-}
 
 .title {
   color: $weCollaborateOffBlack;
