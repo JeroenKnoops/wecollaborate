@@ -2,9 +2,9 @@
 .side-bar
   .box
     .quote "WeCollaborate is a community of people who help and support each other in bringing their ideas to life."
-  .box.red-box
+  .box.red-box{:onclick => "javascript: window.location='/about'"}
     Start a Project
-  .box.blue-box
+  .box.blue-box{:onclick => "javascript: window.location='/about'"}
     Join a creative jam
   .box.update-box
     .title Recent Creative Jam
@@ -12,7 +12,7 @@
   .box.update-box
     .title Tingle Update
     Thanks for the support last week. As a result Tiddo Bakker and I are developing the a meterial which is suitable to the instru.. 
-  .box.blue-box
+  .box.blue-box{:onclick => "javascript: window.location='/about'"}
     Find a Project
   .box.update-box
     .title Bike Club Update
@@ -21,7 +21,7 @@
     Thanks for all the inspiration, ideas and contacts. It looks we are on track to.. 
 
 .main
-  .box.horizontal-info{:onclick => "javascript: // window.location='/projects'"}
+  .box.horizontal-info{:onclick => "javascript: window.location='/about'"}
     .row-fluid
       .span8
         .image= image_tag @project.project_image_url, :id => :project_image
@@ -59,7 +59,7 @@
           })
     
         
-  .box.banner
+  .box.banner.uppercase
     .title Our community
   .row-fluid
     .span6
@@ -69,6 +69,6 @@
       =render :partial => 'person_box', :locals => {:image_url => "people/laura.jpg", :name => "Laura Koenen", :description => "I am a student at the Design Academy in Eindhoven and I am interested in working with multi disciplinary teams in the cont..", :skills => ["Design Research", "Graphic Design"], :collaborations => ["Drawality"] } 
       =render :partial => 'person_box', :locals => {:image_url => "people/tomas.jpg", :name => "Tomas Pieters", :badge => "initiator", :description => "I am an artist passionate about working with other people. Recently I initiated drawality so I would have the possibility", :skills => ["Drawing", "Photography"], :collaborations => ["Bike Club", "Drawality"] }
       
-  .box.banner
+  .box.banner.banner-mini{:onclick => "javascript: window.location='/about'"}
     .title Find out more about WeCollaborate
       
