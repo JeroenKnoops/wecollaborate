@@ -74,7 +74,7 @@ textarea {
 
 .navigation-bar {
   background: #ffffff;
-  @include alpha85;
+  @include alpha80;
   padding-top: 5px;
   
   ul li {
@@ -360,7 +360,7 @@ top:2px;
 .box {
   background: white;
   margin-bottom: 15px;
-  @include alpha85;
+  @include alpha80;
   zoom: 1;
 }
 
@@ -384,7 +384,7 @@ top:2px;
     background: white;
     cursor: hand; 
     cursor: pointer; 
-    @include alpha85;
+    @include alpha80;
   }
 }
 
@@ -405,7 +405,7 @@ top:2px;
     background: white;
     cursor: hand; 
     cursor: pointer; 
-    @include alpha85;
+    @include alpha80;
   }
   a {
     color: white;
@@ -738,6 +738,8 @@ top:2px;
   }
   p {
     padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 16px;
   }
   button {
     margin-bottom: 10px;
@@ -745,6 +747,10 @@ top:2px;
   .sub-text {
     font-size: 10px;
     margin-bottom: 4px;
+  }
+  label {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 

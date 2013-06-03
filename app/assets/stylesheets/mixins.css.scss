@@ -22,6 +22,18 @@
   zoom: 1;
 }
 
+@mixin alpha80 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(255, 255, 255);
+	/* RGBa with 0.75 opacity */
+	background: rgba(255, 255, 255, 0.80);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccfffff, endColorstr=#ccfffff);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff)";
+  zoom: 1;
+}
+
 @mixin alpha85 {
 	/* Fallback for web browsers that doesn't support RGBa */
 	background: rgb(255, 255, 255);
