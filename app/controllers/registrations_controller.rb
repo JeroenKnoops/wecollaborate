@@ -3,6 +3,7 @@ class RegistrationsController < Devise::RegistrationsController
   def create
     super
     session[:omniauth] = nil unless @user.new_record?
+    UserMailer.welcome_email(@user).deliver
   end
   
   def build_resource(*args)
