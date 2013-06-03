@@ -23,7 +23,6 @@ class Project < ActiveRecord::Base
   validates :phrase, :presence => true
   validates :title, :presence => true
   validates :project_type, :presence => true
-  validates :status, :presence => true
   
   def self.default
     where(:title => "Bike Club").first || 1
