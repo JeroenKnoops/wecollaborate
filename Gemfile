@@ -20,6 +20,9 @@ gem 'fb_graph'
 # Gem for adding share buttons to pages.
 gem 'shareable'
 
+# New Relic
+gem 'newrelic_rpm'
+
 # gem "cancan", ">= 1.6.8"
 # gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.0.4"
