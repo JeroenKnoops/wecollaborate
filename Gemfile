@@ -42,6 +42,7 @@ group :development do
   gem "better_errors", ">= 0.6.0"
   gem "binding_of_caller"
   gem "capistrano"
+  gem 'rvm-capistrano'
 end
 
 
