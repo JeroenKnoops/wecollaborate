@@ -9,6 +9,19 @@ set :use_sudo, false
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
+set :default_environment, {
+  'PATH' => "/home/admin/.rvm/gems/ruby-1.9.3-p194/bin:/home/admin/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/admin/.rvm/bin:$PATH",
+  'RUBY_VERSION' => 'ruby 2.0.0',
+  'GEM_HOME'     => '/home/admin/.rvm/gems/ruby-1.9.3-p194@wecollaborate',
+  'GEM_PATH'     => '/home/admin/.rvm/gems/ruby-1.9.3-p194@wecollaborate',
+  'BUNDLE_PATH'  => '/home/admin/.rvm/gems/ruby-1.9.3-p194@wecollaborate',   # If you are using bundler.
+  'TERM'         => 'screen-256color',
+  "RAILS_ENV"    => "production"
+}
+
+default_environment["RAILS_ENV"] = 'production'
+default_run_options[:shell] = 'bash'
+
 role :web, location                          # Your HTTP server, Apache/etc
 role :app, location                          # This may be the same as your `Web` server
 role :db,  location, :primary => true # This is where Rails migrations will run
