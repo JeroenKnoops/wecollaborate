@@ -31,6 +31,10 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
+
+  task :install_bundler, :roles => :app do
+      run "type -P bundle &>/dev/null || { gem install bundler --no-rdoc --no-ri; }"
+  end
 end
 
 namespace :remote do
@@ -44,3 +48,15 @@ namespace :remote do
 end
 
 before 'deploy:migrate', 'remote:create_symblink'
+
+namespace :rvm do
+  task :trust_rvmrc do
+    run "rvm rvmrc trust #{release_path}"
+  end
+end
+
+after "deploy", "rvm:trust_rvmrc"
+
+before "deploy:cold", 
+    "deploy:install_bundler"
+
