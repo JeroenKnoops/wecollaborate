@@ -19,6 +19,8 @@ set :default_environment, {
   "RAILS_ENV"    => "production"
 }
 
+set :ssh_options, { :forward_agent => true }
+
 default_environment["RAILS_ENV"] = 'production'
 default_run_options[:shell] = 'bash'
 
@@ -29,7 +31,7 @@ role :db,  location, :primary => true # This is where Rails migrations will run
 set :user, "admin"
 
 set :deploy_to, "/export/tonyblack/wecollaborate"
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
@@ -56,7 +58,8 @@ namespace :remote do
   DESC
   task :create_symblink, :roles => :app do
     print "    creating symlink to database.yml.\n"
-    run "rm /export/conf/wecollaborate/config/database.yml && ln -s /export/conf/wecollaborate/database.ymp /export/conf/wecollaborate/config/database.yml"
+    run "rm /export/tonyblack/wecollaborate/current/config/database.yml && ln -s /export/conf/wecollaborate/database.yml /export/tonyblack/wecollaborate/current/config/database.yml"
+    run "rm /export/tonyblack/wecollaborate/current/config/newrelic.yml && ln -s /export/conf/wecollaborate/newrelic.yml /export/tonyblack/wecollaborate/current/config/newrelic.yml"
   end
 end
 
