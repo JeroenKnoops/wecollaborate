@@ -1,4 +1,5 @@
 require "bundler/capistrano" 
+require 'new_relic/recipes'
 
 set :application, "WeCollaborate"
 set :repository,  "https://github.com/JeroenKnoops/wecollaborate"
@@ -61,7 +62,7 @@ namespace :remote do
     run "rm /export/tonyblack/wecollaborate/current/config/database.yml && ln -s /export/conf/wecollaborate/database.yml /export/tonyblack/wecollaborate/current/config/database.yml"
     run "rm /export/tonyblack/wecollaborate/current/config/newrelic.yml && ln -s /export/conf/wecollaborate/newrelic.yml /export/tonyblack/wecollaborate/current/config/newrelic.yml"
     run "rm /export/tonyblack/wecollaborate/current/config/initializers/secret_token.rb && ln -s /export/conf/wecollaborate/secret_token.rb /export/tonyblack/wecollaborate/current/config/initializers/secret_token.rb"
-    run "rm /export/tonyblack/wecollaborate/current/config/environments/production.rb && ln -s /export/conf/wecollaborate/production.rb /export/tonyblack/wecollaborate/current/config/environments/production.rb"
+    run "rm /export/tonyblack/wecollaborate/current/config/environments/production.rb && ln -s /export/conf/wecollaborate/production.rb /export/tonyblack/wecollaborate/current/config/environments/productio.rb"
   end
 end
 
@@ -78,3 +79,4 @@ after "deploy", "rvm:trust_rvmrc"
 before "deploy:cold", 
     "deploy:install_bundler"
 
+after "deploy:update", "newrelic:notice_deployment"
