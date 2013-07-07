@@ -62,7 +62,7 @@ namespace :remote do
     run "rm /export/tonyblack/wecollaborate/current/config/database.yml && ln -s /export/conf/wecollaborate/database.yml /export/tonyblack/wecollaborate/current/config/database.yml"
     run "rm /export/tonyblack/wecollaborate/current/config/newrelic.yml && ln -s /export/conf/wecollaborate/newrelic.yml /export/tonyblack/wecollaborate/current/config/newrelic.yml"
     run "rm /export/tonyblack/wecollaborate/current/config/initializers/secret_token.rb && ln -s /export/conf/wecollaborate/secret_token.rb /export/tonyblack/wecollaborate/current/config/initializers/secret_token.rb"
-    run "rm /export/tonyblack/wecollaborate/current/config/environments/production.rb && ln -s /export/conf/wecollaborate/production.rb /export/tonyblack/wecollaborate/current/config/environments/productio.rb"
+    run "rm /export/tonyblack/wecollaborate/current/config/environments/production.rb && ln -s /export/conf/wecollaborate/production.rb /export/tonyblack/wecollaborate/current/config/environments/production.rb"
   end
 end
 

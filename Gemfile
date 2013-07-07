@@ -36,8 +36,6 @@ gem 'nifty-generators'
 group :development do
   gem 'rspec-rails'
   gem "guard-rspec", "~> 3.0.0"
-  gem "html2haml"
-  gem "erb2haml"
   gem "quiet_assets", ">= 1.0.1"
   gem "better_errors", ">= 0.6.0"
   gem "binding_of_caller"
