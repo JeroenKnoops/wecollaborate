@@ -1,6 +1,4 @@
 class User < ActiveRecord::Base
-  include PublicActivity::Model
-
   has_many :friendships
   has_many :friends, :through => :friendships
   
@@ -22,15 +20,9 @@ class User < ActiveRecord::Base
   validates :email, confirmation: true
   validates_presence_of :fullname
   
-  after_create :create_activity_record
-  
   scope :recent, lambda {|number| order("created_at desc").limit(number)}
   
   has_many :projects
-  
-  def create_activity_record
-    self.create_activity(:created_user, :owner => self)
-  end
   
   def apply_omniauth(omni)
      authentications.build(:provider => omni['provider'], 
