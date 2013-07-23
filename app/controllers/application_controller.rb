@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  include PublicActivity::StoreController
   protect_from_forgery
   
   before_filter :set_mode

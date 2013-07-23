@@ -14,8 +14,8 @@ class Project < ActiveRecord::Base
   accepts_nested_attributes_for :project_categories
   
   scope :recent, lambda {|number| order("created_at desc").limit(number)}
-  scope :inactive, where(:status => false)
-  scope :active, where(:status => true)
+  scope :inactive, -> { where(:status => false) }
+  scope :active, -> { where(:status => true) }
   
   validates :project_image_url, :presence => true
   validates :initiator_id, :presence => true

@@ -1,9 +1,7 @@
 Wecollaborate::Application.routes.draw do
 
-  root to: 'static_pages#home'
-
   devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+  root to: 'static_pages#home'
 
   resources :authentications
 
@@ -14,29 +12,29 @@ Wecollaborate::Application.routes.draw do
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "authentications#create", registrations: "registrations"}
   ActiveAdmin.routes(self)
 
-  match '/about-creative-commons-policy' => 'static_pages#about_creative_commons_policy', as: 'about_cpp'
-  match '/terms-and-conditions' => 'static_pages#terms_and_conditions', as: 'terms'
+  get '/about-creative-commons-policy' => 'static_pages#about_creative_commons_policy', as: 'about_cpp'
+  get '/terms-and-conditions' => 'static_pages#terms_and_conditions', as: 'terms'
   
-  match '/help',    to: 'static_pages#help'
-  match '/about',   to: 'static_pages#about'
-  match '/contact', to: 'static_pages#contact'
+  get '/help',    to: 'static_pages#help'
+  get '/about',   to: 'static_pages#about'
+  get '/contact', to: 'static_pages#contact'
 
-  match '/home',    to: 'static_pages#home'
-  match '/construction', to: 'static_pages#construction'
+  get '/home',    to: 'static_pages#home'
+  get '/construction', to: 'static_pages#construction'
   
-  match 'timeline', to: 'timeline#show'
+  get 'timeline', to: 'timeline#show'
 
-  match '/people',  to: 'people#index'
+  get '/people',  to: 'people#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+  #   get 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  #   get 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
@@ -83,5 +81,5 @@ Wecollaborate::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  # get ':controller(/:action(/:id))(.:format)'
 end
