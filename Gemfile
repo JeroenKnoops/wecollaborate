@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'bootstrap-sass', '2.3.1'
+gem 'bootstrap-sass', '~> 2.3.1'
 gem 'active_link_to'
 gem 'haml-rails', '>= 0.3.4'
 
@@ -60,10 +60,9 @@ group :test do
   gem 'rb-fsevent', '0.9.3', :require => false
   gem 'growl', '1.0.3'
   gem 'factory_girl_rails', '4.2.1'
-  gem 'cucumber-rails', '1.3.1', :require => false
   gem 'database_cleaner', '0.7.0'
   gem 'launchy'
-  gem "mocha"
+  gem "mocha", :require => false
 end
 
 group :development, :test do
@@ -77,4 +76,3 @@ group :production do
 end
 
 
-gem "mocha", :group => :test
