@@ -60,6 +60,8 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'therubyracer', :platforms => :ruby
+  
   # gem 'turbo-sprockets-rails3'
 end
 
