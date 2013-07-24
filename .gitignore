@@ -27,7 +27,6 @@ doc/
 capybara-*.html
 .rspec
 /.bundle
-/bin
 /vendor/bundle
 /vendor/gems
 /log/*
