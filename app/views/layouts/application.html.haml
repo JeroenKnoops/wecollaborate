@@ -6,6 +6,13 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body{:id => body_id}
+    :javascript
+      var success = function() {
+        alert("You have entered the KONAMI CODE!  You now have 30 lives.  Kinda.")
+      }
+      
+      var konami = new Konami(success);
+  
     = render 'layouts/header'
     
     .content.container
