@@ -66,7 +66,8 @@ namespace :remote do
   end
 end
 
-before 'deploy:migrate', 'remote:create_symblink'
+after 'deploy:update_code',  'remote:create_symblink'
+after 'remote:create_symblink', 'deploy:migrate'
 
 namespace :rvm do
   task :trust_rvmrc do
