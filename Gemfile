@@ -9,15 +9,17 @@ gem 'bootstrap-sass'
 gem 'active_link_to'
 gem 'haml-rails'
 
-# gem 'devise'
+gem 'devise'
 
-gem 'devise',              github: 'plataformatec/devise'
+# gem 'devise',              github: 'plataformatec/devise'
 gem 'responders',          github: 'plataformatec/responders'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack', branch: 'rails-4'
 gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
 gem 'formtastic',          github: 'justinfrench/formtastic'
 gem 'protected_attributes'
+
+# gem 'activeadmin'
 
 gem 'tinymce-rails'
 
@@ -35,7 +37,7 @@ gem 'newrelic_rpm'
 
 # gem "cancan", ">= 1.6.8"
 # gem "rolify", ">= 3.2.0"
-gem "simple_form", :git => 'git://github.com/plataformatec/simple_form.git'
+gem "simple_form" # , :git => 'git://github.com/plataformatec/simple_form.git'
 # gem "figaro", ">= 0.5.3"
 
 gem 'nifty-generators'

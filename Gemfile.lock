@@ -43,30 +43,11 @@ GIT
       actionpack (>= 3.0)
 
 GIT
-  remote: git://github.com/plataformatec/devise.git
-  revision: c323065b57277e175af21a693a115c55f98936e6
-  specs:
-    devise (3.1.0)
-      bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
-
-GIT
   remote: git://github.com/plataformatec/responders.git
   revision: d6d3cb4b0d644ebb21ad3c4fe28b5d4040d4df69
   specs:
     responders (1.0.0)
       railties (>= 3.2, < 5)
-
-GIT
-  remote: git://github.com/plataformatec/simple_form.git
-  revision: 50c4ac4a8bd0cb883ddaa309b779978e4207fef4
-  specs:
-    simple_form (3.0.0)
-      actionpack (>= 4.0.0, < 4.1)
-      activemodel (>= 4.0.0, < 4.1)
 
 GEM
   remote: https://rubygems.org/
@@ -139,6 +120,12 @@ GEM
     coffee-script-source (1.6.3)
     database_cleaner (1.1.1)
     debug_inspector (0.0.2)
+    devise (3.1.0)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.1)
@@ -305,6 +292,9 @@ GEM
     shareable (0.0.2)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    simple_form (3.0.0)
+      actionpack (>= 4.0.0, < 4.1)
+      activemodel (>= 4.0.0, < 4.1)
     simple_oauth (0.2.0)
     spork (0.9.2)
     sprockets (2.10.0)
@@ -355,7 +345,7 @@ DEPENDENCIES
   capybara
   coffee-rails
   database_cleaner
-  devise!
+  devise
   factory_girl_rails
   fb_graph
   formtastic!
@@ -382,7 +372,7 @@ DEPENDENCIES
   rvm-capistrano
   sass-rails
   shareable
-  simple_form!
+  simple_form
   spork
   sqlite3
   therubyracer
