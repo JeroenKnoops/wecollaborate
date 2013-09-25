@@ -41,5 +41,6 @@ Wecollaborate::Application.configure do
   
   ENV["FACEBOOK_APP_ID"] = '21031244697'
   ENV['FACEBOOK_APP_SECRET'] = 'fbfa11f797a87755e1ed420971988cca'
-  
+
+  config.middleware.delete Rack::Lock  
 end
