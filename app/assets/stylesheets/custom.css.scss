@@ -28,8 +28,8 @@ html {
 body {
   color: #5a5a5a;
   letter-spacing: 0.1em;
-  background: url(grid-09.png) repeat top left;
-  background-image: -webkit-image-set( url(grid-09.png) 1x, url(grid-09_2X.png) 2x );
+  background: url('/images/grid-09.png') repeat top left;
+  background-image: -webkit-image-set( url('/images/grid-09.png') 1x, url('/images/grid-09_2X.png') 2x );
   background-position: center;
   line-height: 18px;
 }
@@ -63,13 +63,13 @@ textarea {
 -------------------------------------------------- */
 
 .logo {
-  background: url('/assets/logo_and_buttons/WeCollaborate_Logo_3.png') no-repeat top left;
+  background: url('/images/logo_and_buttons/WeCollaborate_Logo_3.png') no-repeat top left;
   width: 234px;
   height: 37px;
   margin-bottom: 20px;
   float: left;
   &:hover {
-    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Hover_3.png') no-repeat top left;
+    background: url('/images/logo_and_buttons/WeCollaborate_Logo_Hover_3.png') no-repeat top left;
   }
 }
 
@@ -178,25 +178,25 @@ footer {
   }
   
   .twitter-logo {
-    background: url('/assets/logo_and_buttons/Twitter_3.png') no-repeat top left;
+    background: url('/images/logo_and_buttons/Twitter_3.png') no-repeat top left;
     width: 41px;
     height: 33px;
   }
 
   .facebook-logo {
-    background: url('/assets/logo_and_buttons/Facebook_3.png') no-repeat top left;
+    background: url('/images/logo_and_buttons/Facebook_3.png') no-repeat top left;
     width: 41px;
     height: 33px;
   }
 
   .logo-footer {
-    background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small__3.png') no-repeat top left;
+    background: url('/images/logo_and_buttons/WeCollaborate_Logo_Small__3.png') no-repeat top left;
     width: 192px;
     height: 31px;
     margin-bottom: 20px;
     float: left;
     &:hover {
-      background: url('/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png') no-repeat top left;
+      background: url('/images/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png') no-repeat top left;
     }
   }
   

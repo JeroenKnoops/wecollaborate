@@ -19,8 +19,6 @@ gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
 gem 'formtastic',          github: 'justinfrench/formtastic'
 gem 'protected_attributes'
 
-# gem 'activeadmin'
-
 gem 'tinymce-rails'
 
 # http://www.orhancanceylan.com/rails-twitter-and-facebook-authentications-with-omniauth-and-devise/
@@ -39,11 +37,8 @@ gem 'newrelic_rpm'
 # gem "rolify", ">= 3.2.0"
 gem "simple_form" # , :git => 'git://github.com/plataformatec/simple_form.git'
 # gem "figaro", ">= 0.5.3"
-
+ 
 gem 'nifty-generators'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
   gem 'rspec-rails'
@@ -53,6 +48,7 @@ group :development do
   gem "binding_of_caller"
   gem "capistrano"
   gem 'rvm-capistrano'
+  gem 'metric_fu'
 end
 
 

@@ -1,32 +1,32 @@
 @mixin defaults($color) {
   @if $color == 'yellow' {
-    $logo: '/assets/logo_and_buttons/WeCollaborate_Logo_3.png';
-    $logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Hover_3.png';
+    $logo: '/images/logo_and_buttons/WeCollaborate_Logo_3.png';
+    $logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Hover_3.png';
     $main_color: $weCollaborateYellow;
-    $twitter: '/assets/logo_and_buttons/Twitter_3.png';
-    $facebook: '/assets/logo_and_buttons/Facebook_3.png';
-    $small_logo: '/assets/logo_and_buttons/WeCollaborate_Logo_Small__3.png';
-    $small_logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png';
+    $twitter: '/images/logo_and_buttons/Twitter_3.png';
+    $facebook: '/images/logo_and_buttons/Facebook_3.png';
+    $small_logo: '/images/logo_and_buttons/WeCollaborate_Logo_Small__3.png';
+    $small_logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png';
     @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
   } 
   @if $color == 'red' {
-    $logo: '/assets/logo_and_buttons/WeCollaborate_Logo_2.png';
-    $logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Hover_2.png';
+    $logo: '/images/logo_and_buttons/WeCollaborate_Logo_2.png';
+    $logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Hover_2.png';
     $main_color: $weCollaborateRed;
-    $twitter: '/assets/logo_and_buttons/Twitter_2.png';
-    $facebook: '/assets/logo_and_buttons/Facebook_2.png';
-    $small_logo: '/assets/logo_and_buttons/WeCollaborate_Logo_Small__2.png';
-    $small_logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_2.png';
+    $twitter: '/images/logo_and_buttons/Twitter_2.png';
+    $facebook: '/images/logo_and_buttons/Facebook_2.png';
+    $small_logo: '/images/logo_and_buttons/WeCollaborate_Logo_Small__2.png';
+    $small_logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Small_Hover_2.png';
     @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
   } 
   @if $color == 'blue' {
-    $logo: '/assets/logo_and_buttons/WeCollaborate_Logo_1.png';
-    $logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Hover_1.png';
+    $logo: '/images/logo_and_buttons/WeCollaborate_Logo_1.png';
+    $logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Hover_1.png';
     $main_color: $weCollaborateBlue;
-    $twitter: '/assets/logo_and_buttons/Twitter_1.png';
-    $facebook: '/assets/logo_and_buttons/Facebook_1.png';
-    $small_logo: '/assets/logo_and_buttons/WeCollaborate_Logo_Small__1.png';
-    $small_logo_hover: '/assets/logo_and_buttons/WeCollaborate_Logo_Small_Hover_1.png';
+    $twitter: '/images/logo_and_buttons/Twitter_1.png';
+    $facebook: '/images/logo_and_buttons/Facebook_1.png';
+    $small_logo: '/images/logo_and_buttons/WeCollaborate_Logo_Small__1.png';
+    $small_logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Small_Hover_1.png';
     @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
   } 
 }
