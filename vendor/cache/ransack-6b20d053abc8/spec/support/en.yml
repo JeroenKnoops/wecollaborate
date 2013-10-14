@@ -1,7 +1,0 @@
-en:
-  attributes:
-    id: 'id'
-  ransack:
-    attributes:
-      person:
-        name: Full Name
