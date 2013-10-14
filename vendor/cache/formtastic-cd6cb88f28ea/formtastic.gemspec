@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin French"]
-  s.date = "2013-09-25"
+  s.date = "2013-10-14"
   s.description = "A Rails form builder plugin/gem with semantically rich and accessible markup"
   s.email = ["justin@indent.com.au"]
   s.extra_rdoc_files = ["README.textile"]

@@ -25,7 +25,7 @@
     .row-fluid
       .span8
         .image= image_tag @project.project_image_url, :id => :project_image
-      .span4#project-info
+      .span4.horizontal-info-text#project-info
         .tag= @project.categories.map(&:title).join('/')
         .title= @project.title
         .author

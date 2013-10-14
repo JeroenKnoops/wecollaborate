@@ -536,19 +536,13 @@ top:2px;
 
 
 .horizontal-info:hover {
-  color: white;
-  background: $weCollaborateYellow;
   cursor: hand; 
   cursor: pointer; 
-  opacity:0.8;
-  filter:alpha(opacity=80); /* For IE8 and earlier */
-  .title, .sub-title {
-    color: white;
-  }
-  .image{
+  .horizontal-info-text {
+    background: $weCollaborateYellow;
     opacity:0.7;
     filter:alpha(opacity=70); /* For IE8 and earlier */
-  }   
+  }
 }
 
 
@@ -619,18 +613,18 @@ top:2px;
 }
 
 .vertical-info:hover {
-  color: white;
   background: $weCollaborateYellow;
+  opacity:0.7;
+  filter:alpha(opacity=70); /* For IE8 and earlier */
   cursor: hand; 
   cursor: pointer; 
-  opacity:0.8;
-  filter:alpha(opacity=80); /* For IE8 and earlier */
-  .title, .sub-title {
-    color: white;
-  }
-  .image{
+  .vertical-info-text {
+    background: $weCollaborateYellow;
     opacity:0.7;
     filter:alpha(opacity=70); /* For IE8 and earlier */
+    .description {
+      color: black;
+    }
   }
 }
 

@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jos\u{e9} Valim"]
-  s.date = "2013-09-25"
+  s.date = "2013-10-14"
   s.description = "A set of Rails responders to dry up your application"
   s.email = "contact@plataformatec.com.br"
   s.files = ["CHANGELOG.md", "MIT-LICENSE", "README.md", "lib/generators", "lib/generators/rails", "lib/generators/rails/responders_controller_generator.rb", "lib/generators/rails/templates", "lib/generators/rails/templates/controller.rb", "lib/generators/rails/USAGE", "lib/generators/responders", "lib/generators/responders/install_generator.rb", "lib/responders", "lib/responders/collection_responder.rb", "lib/responders/controller_method.rb", "lib/responders/flash_responder.rb", "lib/responders/http_cache_responder.rb", "lib/responders/locales", "lib/responders/locales/en.yml", "lib/responders/version.rb", "lib/responders.rb", "test/collection_responder_test.rb", "test/controller_method_test.rb", "test/flash_responder_test.rb", "test/http_cache_responder_test.rb", "test/locales", "test/locales/en.yml", "test/test_helper.rb", "test/views", "test/views/addresses", "test/views/addresses/create.js.erb", "test/views/addresses/edit.html.erb", "test/views/addresses/new.html.erb"]
