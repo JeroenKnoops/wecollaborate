@@ -1,13 +1,7 @@
-.hexagons {
-  top: 0px;
-  left: 0px;
-  height: 0px;
-}
-
 .hexagon-box {
-  width: 1px;
-  height: 1px;
-	position: relative;
+  width: 44px;
+  height: 50px;
+	position: absolute;
   top: 1px;
   left: 1px;
   z-index: -1;
@@ -15,9 +9,9 @@
 }
 
 .triangle-box {
-  width: 1px;
-  height: 1px;
-	position: relative;
+  width: 22px;
+  height: 26px;
+	position: absolute;
   top: 1px;
   left: 1px;
   z-index: -1;
@@ -25,105 +19,3 @@
 }
 
 
-
-.hexagon-old-red {
-	width: 44px;
-	height: 26px;
-	background: rgba(255, 0, 0, 0.6);
-	position: relative;
-  top: 198px;
-  left: 55px;
-  z-index: -1;
-}
-
-.hexagon-old-red:before {
-	content: "";
-	position: absolute;
-	top: -13px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-bottom: 13px solid rgba(255, 0, 0, 0.6);
-}
-
-.hexagon-old-red:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-top: 12px solid rgba(255, 0, 0, 0.6);
-}
-
-.hexagon-old-blue {
-	width: 44px;
-	height: 26px;
-	background: rgba(0, 0, 255, 0.6);
-	position: relative;
-  top: 354px;
-  left: 964px;
-  z-index: -1;
-}
-
-.hexagon-old-blue:before {
-	content: "";
-	position: absolute;
-	top: -13px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-bottom: 13px solid rgba(0, 0, 255, 0.6);
-}
-
-.hexagon-old-blue:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-top: 12px solid rgba(0, 0, 255, 0.6);
-}
-
-.hexagon-old-yellow {
-	width: 44px;
-	height: 26px;
-	background: rgba(255, 205, 11, 0.6);
-	position: relative;
-  top: 354px;
-  left: 964px;
-  z-index: -1;
-}
-
-.hexagon-old-yellow:before {
-	content: "";
-	position: absolute;
-	top: -13px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-bottom: 13px solid rgba(255, 205, 11, 0.6);
-}
-
-.hexagon-old-yellow:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22px solid transparent;
-	border-right: 22px solid transparent;
-	border-top: 12px solid rgba(255, 205, 11, 0.6);
-}
