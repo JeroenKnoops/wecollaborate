@@ -6,18 +6,20 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body{:id => body_id}
-    :javascript
-      var success = function() {
-        alert("You have entered the KONAMI CODE!  You now have 30 lives.  Kinda.")
-      }
-      
-      var konami = new Konami(success);
-  
-    = render 'layouts/header'
+    .wrapper-footer
+      :javascript
+        var success = function() {
+          alert("You have entered the KONAMI CODE!  You now have 30 lives.  Kinda.")
+        }
+        
+        var konami = new Konami(success);
     
-    .content.container#container
-      = render 'layouts/alerts'
-      = yield
+      = render 'layouts/header'
+      
+      .content.container#container
+        = render 'layouts/alerts'
+        = yield
+      .push-footer
     = render 'layouts/footer'
       
 

@@ -12,6 +12,7 @@ $baseFontFamily:  'Gotham-Book';
 @import "badge";
 @import "ribbon";
 @import "hexagons";
+@import "modules/mod-push-footer";
 
 @import "controller_styles";
 
@@ -200,6 +201,13 @@ footer {
     }
   }
   
+  .keep-in-touch {
+    color: #231f20;
+    font-size: 24px !important;
+    line-height: 1.1em;
+    font-family: 'AkkoRounded';
+    letter-spacing: 0.01em; 
+  }
 }
 
 /* sidebar */
