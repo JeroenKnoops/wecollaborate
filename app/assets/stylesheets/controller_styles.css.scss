@@ -7,6 +7,7 @@
     $facebook: '/images/logo_and_buttons/Facebook_3.png';
     $small_logo: '/images/logo_and_buttons/WeCollaborate_Logo_Small__3.png';
     $small_logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Small_Hover_3.png';
+    $beta_color: $weCollaborateBlue;
     @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
   } 
   @if $color == 'red' {
@@ -17,6 +18,7 @@
     $facebook: '/images/logo_and_buttons/Facebook_2.png';
     $small_logo: '/images/logo_and_buttons/WeCollaborate_Logo_Small__2.png';
     $small_logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Small_Hover_2.png';
+    $beta_color: $weCollaborateYellow;
     @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
   } 
   @if $color == 'blue' {
@@ -27,6 +29,7 @@
     $facebook: '/images/logo_and_buttons/Facebook_1.png';
     $small_logo: '/images/logo_and_buttons/WeCollaborate_Logo_Small__1.png';
     $small_logo_hover: '/images/logo_and_buttons/WeCollaborate_Logo_Small_Hover_1.png';
+    $beta_color: $weCollaborateRed;
     @include defaults-body($logo, $logo_hover, $main_color, $twitter, $facebook, $small_logo, $small_logo_hover);
   } 
 }
@@ -38,6 +41,10 @@
     &:hover {
       background: url($logo_hover) no-repeat top left;
     }
+  }
+  
+  .beta {
+    background: $weCollaborateBlue;
   }
 
   .navigation-bar {

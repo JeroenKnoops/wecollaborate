@@ -669,3 +669,14 @@ top:2px;
 
 @import "project";
 @import "about";
+
+.beta {
+  width: 33px;
+  height: 16px;
+  float: left;
+  margin: 18px 0 0 8px;
+  font-family: 'AkkoRounded';
+  background: $weCollaborateYellow;
+  color: white;
+  padding: 1px 2px;
+}
