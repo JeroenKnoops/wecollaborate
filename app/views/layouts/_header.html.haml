@@ -3,18 +3,6 @@
     .row-fluid{:style => "padding-top: 10px"}
       .logo= link_to "", root_path, :style => "height: 100%;width: 100%; display: block;"
       .beta beta 
-      - if @mode == :full
-        .pull-right
-          .links= link_to "Start a Project"
-          - if user_signed_in? 
-            .links= link_to 'Profile', edit_user_registration_path
-            |
-            = # link_to 'Authentications', authentications_path
-            .links= link_to "Sign out", destroy_user_session_path, :method => :delete, :style => "display: inline" 
-          - else 
-            = #link_to "login with <span>facebook</span>".html_safe, user_omniauth_authorize_path('facebook') 
-            .links= link_to "Sign in / Sign up", new_user_registration_path, :style => "display: inline"
-            = # link_to "Sign in", new_user_session_path , :style => "display: inline"
           
     .row-fluid{:style => "padding-top: 10px"}
       %ul.span12
@@ -27,7 +15,7 @@
         - else 
           = active_link_to 'About Us'.html_safe, about_path, :wrap_tag => :li
           = active_link_to 'Blog'.html_safe, '/blog', :wrap_tag => :li
-          = active_link_to 'Sign Up'.html_safe, new_user_registration_path, :wrap_tag => :li
+          = active_link_to 'Sign Up'.html_safe, new_visitor_path, :wrap_tag => :li
           = active_link_to 'Start a project'.html_safe, about_path, :wrap_tag => :li
         
               

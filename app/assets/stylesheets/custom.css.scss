@@ -18,6 +18,13 @@ $baseFontFamily:  'Gotham-Book';
 
 /* universal */
 
+/* We hate rounded borders */
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -643,28 +650,6 @@ top:2px;
   line-height: 1.1em;
   font-family: 'AkkoRounded';
   letter-spacing: 0.01em;
-}
-
-#registrations_controller {
-  .title {
-    padding-bottom: 10px;
-  }
-  p {
-    padding-bottom: 10px;
-    font-size: 12px;
-    line-height: 16px;
-  }
-  button {
-    margin-bottom: 10px;
-  }
-  .sub-text {
-    font-size: 10px;
-    margin-bottom: 4px;
-  }
-  label {
-    font-size: 12px;
-    line-height: 16px;
-  }
 }
 
 @import "project";

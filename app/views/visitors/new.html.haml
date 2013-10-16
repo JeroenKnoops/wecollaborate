@@ -1,0 +1,57 @@
+= render 'shared/hexagons'
+.row-fluid
+  .span4
+    .box.box-bordered
+      .title Keep up to Date
+      = simple_form_for(@visitor, :html => {:class => 'form-vertical' }) do |f|
+        %p Would you like to be informed on the progress of WeCollaborate. Sign up to our newsletter!
+        = f.hidden_field :visitor_type, value: 1
+        = f.input :name, :required => true, placeholder: 'Full name', :label => false
+        = f.input :email, :required => true, placeholder: 'Email', :label => false
+
+        = f.button :submit, 'Subscribe!', :class => 'btn-wecollaborate'
+
+  .span4
+    .box.box-bordered
+      .title Join WeCollaborate
+      = simple_form_for(@visitor2, :as => :visitor, :html => {:class => 'form-vertical' }) do |f|
+        %p We will inform you when the next Cre- ative Jam happens. We will inform you of projects related to your speciality. We will let you know of significant WeCollaborate developments.
+      
+        / = devise_error_messages!
+        = f.hidden_field :visitor_type, value: 2
+        = f.input :name, :required => true, placeholder: 'Full name', :label => false
+        / .sub-text full name
+    
+        = f.input :email, :required => true, placeholder: 'Email', :label => false
+        
+        = f.input :email_confirmation, :required => true, placeholder: 'Re-enter Email', :label => false
+        %p Enter three things you specialise in and would like to collaborate with.
+        
+        = f.input :speciality_one, :required => true, placeholder: 'Speciality One', :label => false
+        = f.input :speciality_two,  placeholder: 'Speciality Two', :label => false
+        = f.input :speciality_three, placeholder: 'Speciality Three', :label => false
+
+        .row-fluid
+          .span1= f.check_box :newsletter, :checked => true 
+          .span8= f.label :newsletter, "Keep up to date with our regular newsletter" 
+          
+        = f.button :submit, 'Join!', :class => 'btn-wecollaborate'
+  .span4
+    .box.box-bordered
+      .title Start A Project
+      = simple_form_for(@visitor3, :as => :visitor, :html => {:class => 'form-vertical' }) do |f|
+        %p Would you like to initiate a project? We will help you find collaborators. We will invite you to the next Creative Jams. We will let you know of significant WeCollaborate developments.
+        
+        = f.hidden_field :visitor_type, value: 3
+        = f.input :name, :required => true, placeholder: 'Full name', :label => false
+    
+        = f.input :email, :required => true, placeholder: 'Email', :label => false
+        
+        = f.input :email_confirmation, :required => true, placeholder: 'Re-enter Email', :label => false
+        %p Please give a small description of the project you want to start.
+        
+        = f.input :project_title, :required => true, placeholder: 'Project Title', :label => false
+        = f.input :project_description,  placeholder: 'Project description. Maximum 200 words.', :label => false
+        = f.button :submit, 'Start A Project', :class => 'btn-wecollaborate'
+  
+  

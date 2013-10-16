@@ -1,15 +1,17 @@
 Wecollaborate::Application.routes.draw do
 
+  resources :visitors, :only => [:index, :new, :create]
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
   root to: 'static_pages#home'
 
-  resources :authentications
-
-  resources :friendships
 
   resources :projects, :only => [:show, :index]
   
-  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "authentications#create", registrations: "registrations"}
+  # resources :authentications
+  # resources :friendships
+  # devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "authentications#create", registrations: "registrations"}
+
   ActiveAdmin.routes(self)
 
   get '/about-creative-commons-policy' => 'static_pages#about_creative_commons_policy', as: 'about_cpp'
@@ -22,9 +24,8 @@ Wecollaborate::Application.routes.draw do
   get '/home',    to: 'static_pages#home'
   get '/construction', to: 'static_pages#construction'
   
-  get 'timeline', to: 'timeline#show'
-
-  get '/people',  to: 'people#index'
+  # get 'timeline', to: 'timeline#show'
+  # get '/people',  to: 'people#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -105,3 +105,31 @@
   @include defaults('blue');
 }
 
+#visitors_controller {
+  .title {
+    padding-bottom: 10px;
+  }
+  p {
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  button {
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    font-size: 10px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding-left: 8px;
+  }
+  label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .help-inline {
+    
+  }
+  @include defaults('blue');
+}
+
