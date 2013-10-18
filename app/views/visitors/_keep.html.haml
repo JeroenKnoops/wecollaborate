@@ -1,0 +1,9 @@
+.box.box-bordered
+  .title Keep up to Date
+  = simple_form_for(@visitor[:keep], :html => {:class => 'form-vertical' }) do |f|
+    %p Would you like to be informed on the progress of WeCollaborate. Sign up to our newsletter!
+    = f.hidden_field :visitor_type, value: 1
+    = f.input :name, :required => true, placeholder: 'Full name', :label => false
+    = f.input :email, :required => true, placeholder: 'Email', :label => false
+
+    = f.button :submit, 'Subscribe!', :class => 'btn-wecollaborate'

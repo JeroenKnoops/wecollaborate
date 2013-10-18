@@ -15,7 +15,7 @@
         - else 
           = active_link_to 'About Us'.html_safe, about_path, :wrap_tag => :li
           = active_link_to 'Blog'.html_safe, '/blog', :wrap_tag => :li
-          = active_link_to 'Sign Up'.html_safe, new_visitor_path, :wrap_tag => :li
+          = active_link_to 'Sign Up'.html_safe, new_visitor_path, :wrap_tag => :li, :active => @signup
           = active_link_to 'Start a project'.html_safe, about_path, :wrap_tag => :li
         
               

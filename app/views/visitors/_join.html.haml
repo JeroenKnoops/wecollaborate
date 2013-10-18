@@ -1,0 +1,28 @@
+.box.box-bordered
+  .title Join WeCollaborate
+  = simple_form_for(@visitor[:join], :as => :visitor, :html => {:class => 'form-vertical' }) do |f|
+    %p We will inform you when the next Cre- ative Jam happens. We will inform you of projects related to your speciality. We will let you know of significant WeCollaborate developments.
+  
+    / = devise_error_messages!
+    = f.hidden_field :visitor_type, value: 2
+    = f.input :name, :required => true, placeholder: 'Full name', :label => false
+    / .sub-text full name
+
+    = f.input :email, :required => true, placeholder: 'Email', :label => false
+    
+    = f.input :email_confirmation, :required => true, placeholder: 'Re-enter Email', :label => false
+    %p Enter three things you specialise in and would like to collaborate with.
+    
+    = f.input :speciality_one, :required => true, placeholder: 'Speciality One', :label => false
+    = f.input :speciality_two,  placeholder: 'Speciality Two', :label => false
+    = f.input :speciality_three, placeholder: 'Speciality Three', :label => false
+
+    - if @ddw
+      %p Which CREATIVE JAM did you take part in?
+      = f.input :jam, :required => true, collection: @visitor[:jams], :prompt => @visitor[:jams][0], :label => false, input_html: {:class => "selectpicker"}
+    
+    .row-fluid
+      .span1= f.check_box :newsletter, :checked => true 
+      .span8= f.label :newsletter, "Keep up to date with our regular newsletter" 
+      
+    = f.button :submit, 'Join!', :class => 'btn-wecollaborate'

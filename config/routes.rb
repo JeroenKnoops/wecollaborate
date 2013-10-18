@@ -24,6 +24,9 @@ Wecollaborate::Application.routes.draw do
   get '/home',    to: 'static_pages#home'
   get '/construction', to: 'static_pages#construction'
   
+  get '/signup',  to: 'visitors#new'
+  get '/ddw',  to: 'visitors#ddw'
+  
   # get 'timeline', to: 'timeline#show'
   # get '/people',  to: 'people#index'
 

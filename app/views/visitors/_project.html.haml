@@ -1,0 +1,20 @@
+.box.box-bordered
+  .title Start A Project
+  = simple_form_for(@visitor[:project], :as => :visitor, :html => {:class => 'form-vertical' }) do |f|
+    %p Would you like to initiate a project? We will help you find collaborators. We will invite you to the next Creative Jams. We will let you know of significant WeCollaborate developments.
+    
+    = f.hidden_field :visitor_type, value: 3
+    = f.input :name, :required => true, placeholder: 'Full name', :label => false
+
+    = f.input :email, :required => true, placeholder: 'Email', :label => false
+    
+    = f.input :email_confirmation, :required => true, placeholder: 'Re-enter Email', :label => false
+    %p Please give a small description of the project you want to start.
+    
+    = f.input :project_title, :required => true, placeholder: 'Project Title', :label => false
+    = f.input :project_description,  placeholder: 'Project description. Maximum 200 words.', :label => false
+    - if @ddw
+      %p Which CREATIVE JAM did you take part in?
+      = f.input :jam, :required => true, collection: @visitor[:jams], :prompt => @visitor[:jams][0], :label => false, input_html: {:class => "selectpicker"}
+    
+    = f.button :submit, 'Start A Project', :class => 'btn-wecollaborate'
