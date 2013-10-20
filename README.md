@@ -21,4 +21,4 @@ Gems used
 9. factory_girl_rails
 10. ...
 
-[![Build Status](https://travis-ci.org/JeroenKnoops/wecollaborate.png?branch=master)](https://travis-ci.org/JeroenKnoops/wecollaborate)
+[![Build Status](https://travis-ci.org/JeroenKnoops/wecollaborate.png?branch=develop)](https://travis-ci.org/JeroenKnoops/wecollaborate)
