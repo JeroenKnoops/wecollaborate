@@ -23,11 +23,15 @@ class VisitorsController < ApplicationController
   def create
     visitor = Visitor.create(params[:visitor])
     if visitor.save
-      redirect_to root_url, :notice => "Thank you! We will inform you!"
+      if create_from_ddw?
+        redirect_to '/ddw', :notice => "Thank you! We will inform you!"
+      else
+        redirect_to root_url, :notice => "Thank you! We will inform you!"
+      end
     else
       @visitor = {}
       @visitor[:join], @visitor[:keep], @visitor[:project] = Visitor.new, Visitor.new, Visitor.new
-      if params[:visitor][:jam]
+      if create_from_ddw?
         @ddw = true
         @visitor[:jams] = []
         23.times{|n| @visitor[:jams] << "Creative Jam #{n + 1}"}
@@ -48,5 +52,9 @@ class VisitorsController < ApplicationController
   
   def set_signup_header
     @signup = true
+  end
+  
+  def create_from_ddw?
+    !params[:visitor][:jam].blank?
   end
 end
