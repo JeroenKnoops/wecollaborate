@@ -5,7 +5,7 @@ WeCollaborate Website
 
 Version
 =======
-v1.0.2
+v1.0.2a
 
 Gems used
 =========
