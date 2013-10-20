@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable, :omniauthable,
+  devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
@@ -24,12 +24,12 @@ class User < ActiveRecord::Base
   
   has_many :projects
   
-  def apply_omniauth(omni)
-     authentications.build(:provider => omni['provider'], 
-                           :uid => omni['uid'], 
-                           :token => omni['credentials'].token, 
-                           :token_secret => omni['credentials'].secret)
-  end
+  # def apply_omniauth(omni)
+  #    authentications.build(:provider => omni['provider'], 
+  #                          :uid => omni['uid'], 
+  #                          :token => omni['credentials'].token, 
+  #                          :token_secret => omni['credentials'].secret)
+  # end
 
   def password_required?
     (authentications.empty? || !password.blank?) && super #&& provider.blank?

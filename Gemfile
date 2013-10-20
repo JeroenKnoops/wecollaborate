@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
-# gem 'rails', '3.2.13'
-# 
 gem 'rails', '~> 4.0.0'
-# gem 'rails4_upgrade'
 
 gem 'bootstrap-sass'
 gem 'active_link_to'
@@ -15,23 +12,25 @@ gem 'devise'
 # gem 'responders',          github: 'plataformatec/responders'
 # gem 'inherited_resources', github: 'josevalim/inherited_resources'
 # gem 'ransack',             github: 'ernie/ransack', branch: 'rails-4'
-gem 'activeadmin',         github: 'gregbell/active_admin'
+gem 'activeadmin' ,         github: 'gregbell/active_admin'
 # gem 'formtastic',          github: 'justinfrench/formtastic'
 gem 'protected_attributes'
+
+gem 'jslint'
 
 gem 'tinymce-rails'
 
 # http://www.orhancanceylan.com/rails-twitter-and-facebook-authentications-with-omniauth-and-devise/
-gem 'omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'twitter'
-gem 'fb_graph'
+# gem 'omniauth-twitter'
+# gem 'omniauth-facebook'
+# gem 'twitter'
+# gem 'fb_graph'
 
 # Gem for adding share buttons to pages.
-gem 'shareable'
+# gem 'shareable'
 
 # New Relic
-gem 'newrelic_rpm'
+# gem 'newrelic_rpm'
 
 # gem "cancan", ">= 1.6.8"
 # gem "rolify", ">= 3.2.0"
