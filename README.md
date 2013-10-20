@@ -3,6 +3,10 @@ wecollaborate
 
 WeCollaborate Website
 
+Version
+=======
+v1.0.0
+
 Gems used
 =========
 
