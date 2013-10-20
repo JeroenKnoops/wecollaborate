@@ -27,8 +27,7 @@ Wecollaborate::Application.routes.draw do
   get '/signup',  to: 'visitors#new'
   get '/ddw',  to: 'visitors#ddw'
   
-  # get 'timeline', to: 'timeline#show'
-  # get '/people',  to: 'people#index'
+  get '/people',  to: 'people#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

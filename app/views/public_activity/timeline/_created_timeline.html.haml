@@ -1,8 +1,0 @@
-- if activity.trackable 
-  .block.timeline_entry.global
-    %span#edge
-    - unless activity.trackable[:title].blank?
-      %strong= activity.trackable[:title]   
-    .pull-right.date #{time_ago_in_words(activity.trackable[:timestamp])} ago
-    %p
-      = activity.trackable[:description].html_safe

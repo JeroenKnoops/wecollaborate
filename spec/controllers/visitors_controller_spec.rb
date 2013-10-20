@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe VisitorsController do
 
-  describe "GET 'create'" do
+  describe "GET 'new'" do
     it "returns http success" do
-      get 'create'
+      get 'new'
       response.should be_success
     end
   end
