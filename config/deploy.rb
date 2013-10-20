@@ -1,5 +1,5 @@
 require "bundler/capistrano" 
-require 'new_relic/recipes'
+# require 'new_relic/recipes'
 
 set :application, "WeCollaborate"
 set :repository,  "https://github.com/JeroenKnoops/wecollaborate"
@@ -106,5 +106,5 @@ after "deploy", "rvm:trust_rvmrc"
 before "deploy:cold", 
     "deploy:install_bundler"
 
-after "deploy:update", "newrelic:notice_deployment"
+# after "deploy:update", "newrelic:notice_deployment"
 
