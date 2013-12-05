@@ -2,7 +2,6 @@ FactoryGirl.define do
   
   factory :user, aliases: [:initiator] do
     email "jeroen@example.com"
-    password "blurking"
     fullname "Jeroen Knoops"
   end
   
