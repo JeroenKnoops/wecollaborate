@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 4.0.0'
 
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 2.3.0'
 gem 'active_link_to'
 gem 'haml-rails'
 
