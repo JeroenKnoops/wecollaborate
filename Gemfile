@@ -45,7 +45,7 @@ group :development do
   gem "quiet_assets"
   gem "better_errors"
   gem "binding_of_caller"
-  gem "capistrano"
+  gem "capistrano", "~> 2.15.5"
   gem 'rvm-capistrano'
   gem 'metric_fu'
 end
@@ -65,7 +65,7 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', "~> 2.2.1"
   gem 'rb-fsevent', '0.9.3', :require => false
   gem 'growl'
   gem 'factory_girl_rails'
